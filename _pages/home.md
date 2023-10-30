@@ -8,9 +8,7 @@ header:
   #actions:
   #  - label: "<i class='fas fa-download'></i> Install now"
   #    url: "/docs/quick-start-guide/"
-excerpt: >
-  Featuring tutorials and projects from my Statistics classes at Brigham 
-Young University.
+excerpt: "Featuring tutorials and projects from my Statistics classes at Brigham Young University."
 feature_row:
   - image_path: /assets/images/tutorial.jpg
     alt: "posts"
