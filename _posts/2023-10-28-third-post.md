@@ -1,5 +1,4 @@
 ---
-layout: single
 title:  "Understanding Theme Park Wait Times: Collecting the Data"
 header:
   overlay_image: assets/images/heather-maguire-QIUR-K3YgDk-unsplash.jpg
