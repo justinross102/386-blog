@@ -24,7 +24,7 @@ feature_row:
     url: "/assignments/"
     btn_class: "btn--info"
     btn_label: "Go to Kaggle Competitions"  
-  - image_path: 
+  - image_path: /assets/images/jonas-jacobsson-0FRJ2SCuY4k-unsplash.jpg
     alt: "bio"
     title: "About Me"
     excerpt: "Learn more about my qualifications."
