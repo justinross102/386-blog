@@ -6,6 +6,6 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 # excerpt: "Featuring code and scores from various Kaggle Competitions."
 collection: 
-permalink: /competitions/
+permalink: /about/
 author_profile: true
 ---
