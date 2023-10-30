@@ -23,7 +23,14 @@ feature_row:
     excerpt: "See code and scores from various Kaggle Competitions."
     url: "/assignments/"
     btn_class: "btn--info"
-    btn_label: "Go to Kaggle Competitions"
+    btn_label: "Go to Kaggle Competitions"  
+  - image_path: 
+    alt: "bio"
+    title: "About Me"
+    excerpt: "Learn more about my qualifications."
+    url: "/bio/"
+    btn_class: "btn--info"
+    btn_label: "Go to Bio"
 ---
 
 {% include feature_row id="intro" type="center" %}
