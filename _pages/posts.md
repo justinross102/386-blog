@@ -10,9 +10,6 @@ excerpt: "Featuring tutorials and projects from my Statistics classes at Brigham
 collection: posts
 permalink: /posts/
 author_profile: true
-# entries_layout: grid
-header:
-  image: /assets/images/philly.jpg
 ---
 
 
