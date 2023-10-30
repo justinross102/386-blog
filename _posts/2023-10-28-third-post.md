@@ -1,8 +1,10 @@
 ---
+layout: single
 title:  "Understanding Theme Park Wait Times: Collecting the Data"
 header:
-  image: assets/images/heather-maguire-QIUR-K3YgDk-unsplash.jpg
+  overlay_image: assets/images/heather-maguire-QIUR-K3YgDk-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+# excerpt: "Featuring tutorials and projects from my Statistics classes at Brigham Young University."
 author: Justin Ross
 classes: wide
 ---
