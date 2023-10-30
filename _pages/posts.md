@@ -1,7 +1,7 @@
 ---
 layout: collection
 title: "Blog Posts"
-tagline: "This is a custom tagline content which overrides the *default* page excerpt."
+tagline:
 header:
   overlay_image: /assets/images/philly.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
