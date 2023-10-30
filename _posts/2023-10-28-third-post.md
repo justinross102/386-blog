@@ -150,11 +150,6 @@ After running all of this code and printing the resulting dataframe, we get a da
 3                               Wildlife Express Train     True          0 2023-10-30 14:11:34-06:00  Animal Kingdom  Africa
 4    Expedition Everest - Legend of the Forbidden M...     True         15 2023-10-30 14:11:34-06:00  Animal Kingdom    Asia
 ..                                                 ...      ...        ...                       ...             ...     ...
-546                                             Meteor    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
-547                                         Revolution    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
-548                                     Thunder Canyon    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
-549                             Thunder Creek Mountain    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
-550                                White Water Landing    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
 
 [551 rows x 6 columns]
 ```
