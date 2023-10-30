@@ -30,11 +30,10 @@ parks = {
     'Animal Kingdom',
     ...
     'Disney Magic Kingdom',
-    'Epcot',
+    'Epcot'
 }
 
 # print out the park IDs
-
 for group in parks_data:
     all_parks = group.get('parks', [])
 
@@ -150,7 +149,6 @@ After running all of this code and printing the resulting dataframe, we get a da
 3                               Wildlife Express Train     True          0 2023-10-30 14:11:34-06:00  Animal Kingdom  Africa
 4    Expedition Everest - Legend of the Forbidden M...     True         15 2023-10-30 14:11:34-06:00  Animal Kingdom    Asia
 ..                                                 ...      ...        ...                       ...             ...     ...
-
 [551 rows x 6 columns]
 ```
 
