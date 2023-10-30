@@ -54,7 +54,110 @@ Park ID: 8
 Park Name: Animal Kingdom
 ```
 
-With all of these IDs, I collected the data and combined it into a dataset like this:
+## Formatting the Data
+
+To streamline the process of gathering and formatting data, I created a function called `get_park_data()`. This function interacts with the API using a park's unique ID, retrieves the information, and organizes it into a pandas DataFrame. Each row of this DataFrame corresponds to an attraction from the specified park, with columns for each parameter provided by the API. The code for this function is shown below:  
+
+```python
+def get_park_data(ID):
+    url = f"https://queue-times.com/parks/{ID}/queue_times.json"
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        park_data = response.json()
+    else:
+        print(f"Failed to fetch data for park {ID}")
+        return None
+
+    lands_data = park_data.get('lands', [])
+
+    # create empty lists
+    lands = []
+    attractions = []
+    is_open_list = []
+    wait_times = []
+    last_updated_list = []
+
+    # iterate over each land
+    for land in lands_data:
+        land_name = land.get('name')
+
+        # make sure the parks have a 'rides' id
+        rides = land.get('rides', [])
+
+        # iterate over the rides in each land
+        for ride in rides:
+            ride_name = ride.get('name')
+            is_open = ride.get('is_open')
+            wait_time = ride.get('wait_time')
+            last_updated = ride.get('last_updated')
+
+            # append data to lists
+            lands.append(land_name)
+            attractions.append(ride_name)
+            is_open_list.append(is_open)
+            wait_times.append(wait_time)
+            last_updated_list.append(last_updated)
+
+    # create df from the lists
+    park_df = pd.DataFrame({
+        'land': lands,
+        'attraction': attractions,
+        'is_open': is_open_list,
+        'wait_time': wait_times,
+        'last_updated': last_updated_list
+    })
+
+    return park_df
+```
+
+To collect information from multiple parks, I created a list that contained each park's ID and its name. Using a for loop, I applied the `get_park_data()` function to each ID, creating a DataFrame for each park. To make it easy to distinguish each park after merging all the DataFrames, I added the park name as a new column in each DataFrame. Finally, I combined all park DataFrames into a single DataFrame named `all_parks`.
+
+```python
+parks_info = [
+    (8, 'Animal Kingdom'),
+    (17, 'California Adventure'),
+    (7, 'Hollywood Studios'),
+    (6, 'Magic Kingdom'),
+    (16, 'Disneyland'),
+    (5, 'EPCOT'),
+    (64, 'Islands of Adventure'),
+    (65, 'Universal Studios Orlando'),
+    (33, 'Six Flags Discovery Kingdom'),
+    (36, 'Six Flags St. Louis'),
+    (37, 'Six Flags Great Adventure'),
+    (279, 'Legoland California'),
+    (50, 'Cedar Point'),
+    (69, 'Dorney Park')
+]
+
+all_parks = []
+
+for park_id, park_name in parks_info:
+    park_data = get_park_data(park_id)
+    park_data['park'] = park_name
+    all_parks.append(park_data)
+
+all_parks = pd.concat(all_parks, ignore_index=True)
+```
+
+After running all of this code and printing the resulting dataframe, we get a dataframe that looks like this:
+```python
+                                            attraction  is_open  wait_time              last_updated            park    land
+0                            Festival of the Lion King     True          0 2023-10-30 14:11:34-06:00  Animal Kingdom  Africa
+1                      Gorilla Falls Exploration Trail     True          0 2023-10-30 14:11:34-06:00  Animal Kingdom  Africa
+2                                  Kilimanjaro Safaris     True          5 2023-10-30 14:11:34-06:00  Animal Kingdom  Africa
+3                               Wildlife Express Train     True          0 2023-10-30 14:11:34-06:00  Animal Kingdom  Africa
+4    Expedition Everest - Legend of the Forbidden M...     True         15 2023-10-30 14:11:34-06:00  Animal Kingdom    Asia
+..                                                 ...      ...        ...                       ...             ...     ...
+546                                             Meteor    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
+547                                         Revolution    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
+548                                     Thunder Canyon    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
+549                             Thunder Creek Mountain    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
+550                                White Water Landing    False          0 2023-10-30 14:12:42-06:00     Dorney Park  Thrill
+
+[551 rows x 6 columns]
+```
 
 
 
