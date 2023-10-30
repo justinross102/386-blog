@@ -282,9 +282,9 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: 
+      type: posts
     values:
-      layout: 
+      layout: single
       author_profile: true
       read_time: true
       comments: # true
