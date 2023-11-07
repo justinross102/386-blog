@@ -152,9 +152,27 @@ After running all of this code and printing the resulting dataframe, we get a da
 [551 rows x 6 columns]
 ```
 
+# Combining Data for Friday and Saturday
 
+Once I got the API working, I collected data from it during the Morning, Afternoon, and Evening on a Friday and Saturday. I combined all 6 dataframes together, adding a column to represent the day of the week. I had to do some difficult wrangling to create 3 columns for both the `wait_time` and `is_open` variables, depending on the time of day.
 
+The finished dataframe shows every attraction twice, once for Friday and once for Saturday. Each row has three `is_open` columns and three `wait_time` columns, for Morning, Afternoon, and Evening. When printed, it looks like this:
+```python
+                           attraction        land                       park       day is_open_M is_open_A is_open_E  wait_time_M  wait_time_A  wait_time_E
+0           Festival of the Lion King      Africa             Animal Kingdom    Friday      True      True      True          0.0          0.0          0.0
+1           Festival of the Lion King      Africa             Animal Kingdom  Saturday      True      True      True          0.0          0.0          0.0
+2     Gorilla Falls Exploration Trail      Africa             Animal Kingdom    Friday      True      True     False          0.0          0.0          0.0
+3     Gorilla Falls Exploration Trail      Africa             Animal Kingdom  Saturday      True      True     False          0.0          0.0          0.0
+4                 Kilimanjaro Safaris      Africa             Animal Kingdom    Friday      True      True     False         65.0         30.0          0.0
+...                               ...         ...                        ...       ...       ...       ...       ...          ...          ...          ...
+1098     Kang & Kodos' Twirl 'n' Hurl  World Expo  Universal Studios Orlando  Saturday      True      True     False         35.0         35.0          0.0
+1099     MEN IN BLACK™ Alien Attack!™  World Expo  Universal Studios Orlando    Friday     False      True      True          0.0         35.0         10.0
+1100     MEN IN BLACK™ Alien Attack!™  World Expo  Universal Studios Orlando  Saturday      True      True      True         50.0         35.0         10.0
+1101               The Simpsons Ride™  World Expo  Universal Studios Orlando    Friday      True      True     False         20.0         25.0          0.0
+1102               The Simpsons Ride™  World Expo  Universal Studios Orlando  Saturday      True      True     False         25.0         60.0          0.0
+```
 
+I am extremely grateful to the creator of the [Theme Park Wait Times API](https://queue-times.com/en-US/pages/about) Zachary Bull, who gave me permission to use his API for this project. It was difficult to collect the data and wrangle it into its final form, but it was a perfect opportunity for me to practice the skills we've been learning in class. I look forward to exploring this data in my next blog post!
 
 
 
