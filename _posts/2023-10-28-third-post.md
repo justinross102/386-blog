@@ -165,7 +165,7 @@ The finished dataframe shows every attraction twice, once for Friday and once fo
 3     Gorilla Falls Exploration Trail      Africa             Animal Kingdom  Saturday      True      True     False          0.0          0.0          0.0
 4                 Kilimanjaro Safaris      Africa             Animal Kingdom    Friday      True      True     False         65.0         30.0          0.0
 ...                               ...         ...                        ...       ...       ...       ...       ...          ...          ...          ...
-1098     Kang & Kodos Twirl 'n' Hurl  World Expo  Universal Studios Orlando  Saturday      True      True     False         35.0         35.0          0.0
+1098     Kang & Kodos Twirl n Hurl     World Expo  Universal Studios Orlando  Saturday      True      True     False         35.0         35.0          0.0
 1099     MEN IN BLACK™ Alien Attack!™  World Expo  Universal Studios Orlando    Friday     False      True      True          0.0         35.0         10.0
 1100     MEN IN BLACK™ Alien Attack!™  World Expo  Universal Studios Orlando  Saturday      True      True      True         50.0         35.0         10.0
 1101               The Simpsons Ride™  World Expo  Universal Studios Orlando    Friday      True      True     False         20.0         25.0          0.0
