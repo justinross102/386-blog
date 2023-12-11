@@ -13,6 +13,10 @@ As I mentioned in my previous post, I always look forward to trips to a theme pa
 
 As we begin an analysis of this data, the first question I have is: which theme park has the most attractions?
 
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/graph1.png" alt="" style="width:500px;"/>
+
+As we can see from this graph, 
+
 
     * The visualizations you chose previously along with commentary and insights.
     * A summary of the most intriguing findings from your data and how the EDA
