@@ -17,9 +17,11 @@ As we begin an analysis of this data, the first question I have is: **which them
 
 From this graph, we see that Cedar Point and Six Flags Great Adventure have significantly more attractions than every other park. Animal Kingdom and Hollywood Studios from Disney World have the lowest number of attractions. The large difference in attraction counts across parks could be useful for trip planners to know, and future visualizations can help us see how wait times in small (few attractions) parks compare to wait times in large (many attractions) parks.
 
-Another highly important question for theme park visitors is: **What is the difference in ride closures between Friday and Saturday?**
+Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?**
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/graph2.png" alt="" style="width:1000px;"/>
+
+Interestingly, open attractions consistently outnumbered closed attractions on Saturday. The same cannot be said for Friday!
 
 
     * The visualizations you chose previously along with commentary and insights.
