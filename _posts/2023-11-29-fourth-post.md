@@ -21,9 +21,8 @@ Another highly important question for theme park visitors could be: **What is th
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/graph2.png" alt="" style="width:1000px;"/>
 
-Interestingly, open attractions consistently outnumbered closed attractions on Saturday. The same cannot be said for Friday!
+Interestingly, open attractions consistently outnumbered closed attractions on Saturday. On Friday, closed attractions outnumbered open attractions in both the morning and evening, suggesting that Friday afternoon is the best time to go if you're worried that your favorite ride will be closed!
+
+In addition to ride closures, another incredibly important question for theme park visitors is: **How do wait times change over the course of a day?**
 
 
-    * The visualizations you chose previously along with commentary and insights.
-    * A summary of the most intriguing findings from your data and how the EDA
-    * A concluding statement.
