@@ -19,7 +19,7 @@ From this graph, we see that Cedar Point and Six Flags Great Adventure have sign
 
 Another highly important question for theme park visitors is: **What is the difference in ride closures between Friday and Saturday?**
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/graph2.png" alt="" style="width:800px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/graph2.png" alt="" style="width:1000px;"/>
 
 
     * The visualizations you chose previously along with commentary and insights.
