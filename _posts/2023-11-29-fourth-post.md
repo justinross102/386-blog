@@ -18,32 +18,9 @@ As we begin an analysis of this data, the first question I have is: **Which them
 
 From this graph, we see that Cedar Point and Six Flags Great Adventure have significantly more attractions than every other park. Animal Kingdom and Hollywood Studios from Disney World have the lowest number of attractions. The large difference in attraction counts across parks could be useful for trip planners to know, and future visualizations can help us see how wait times in small (few attractions) parks compare to wait times in large (many attractions) parks.
 
-## Ride Closures
+## Rides with the Highest Wait Times
 
-Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?**
-
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/graph2.png" alt="" style="width:1000px;"/>
-
-Interestingly, open attractions consistently outnumbered closed attractions on Saturday. On Friday, closed attractions outnumbered open attractions in both the morning and evening, suggesting that Friday afternoon is the best time to go if you're worried that your favorite ride will be closed!
-
-## Wait Times Throughout the Day
-
-In addition to ride closures, another incredibly important question for theme park visitors is: **How do wait times change over the course of a day?**
-
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot3.png" alt="" style="width:1100px;"/>
-
-From these side-by-side boxplots we see that across Friday and Saturday, the median wait time is consistently around 20 minutes. The only exceptions to that are Friday evening and Saturday Afternoon.
-
-As a budding statistician, I sometimes think it is worth looking at violin plots in addition to boxplots. Both plots display essentially the same information, but the violin plot is a useful tool because it depicts summary statistics and the range of the data while also showing the density of the response variable. In this case, the boxplots show that the median is usually pretty close to 20, but the violin plots below show that the majority of the data has a wait time of about 10 minutes in most cases.
-
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot4.png" alt="" style="width:800px;"/>
-
-## Average Wait Times
-
-Sometimes it can be useful to just look at a few parks. In this case, let's look at how the average wait time in a Disney World park changes throughout a day. This graph shows not only the mean, but it also shows a confidence interval for that mean. 
-
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot5.png" alt="" style="width:1000px;"/>
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot6.png" alt="" style="width:1000px;"/>
+As I sought to identify the attractions with the highest wait times during different times of the day, I focused on the top 5 for each period. Interestingly, two parks consistently emerged as the frontrunners—Hollywood Studios and EPCOT—despite being among the smallest parks in terms of the number of attractions. Even Animal Kingdom, with the fewest attractions, managed to be among the top contenders during the morning and evening hours. Perhaps the smaller size of these parks contributes to higher wait times, but it would require formal analysis to determine if there truly is a relationship.
 
 #### Morning
 
@@ -74,6 +51,34 @@ Sometimes it can be useful to just look at a few parks. In this case, let's look
 |  Islands of Adventure      |  Jurassic World VelociCoaster  |      105    |
 |         Magic Kingdom      | Buzz Lightyear's Space Ranger Spin |  80     |
 |                 EPCOT      |             Frozen Ever After  |       75    |
+
+## Ride Closures
+Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?**
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/graph2.png" alt="" style="width:1000px;"/>
+
+Interestingly, open attractions consistently outnumbered closed attractions on Saturday. On Friday, closed attractions outnumbered open attractions in both the morning and evening, suggesting that Friday afternoon is the best time to go if you're worried that your favorite ride will be closed!
+
+## Wait Times Throughout the Day
+
+In addition to ride closures, another incredibly important question for theme park visitors is: **How do wait times change over the course of a day?**
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot3.png" alt="" style="width:1100px;"/>
+
+From these side-by-side boxplots we see that across Friday and Saturday, the median wait time is consistently around 20 minutes. The only exceptions to that are Friday evening and Saturday Afternoon.
+
+As a budding statistician, I sometimes think it is worth looking at violin plots in addition to boxplots. Both plots display essentially the same information, but the violin plot is a useful tool because it depicts summary statistics and the range of the data while also showing the density of the response variable. In this case, the boxplots show that the median is usually pretty close to 20, but the violin plots below show that the majority of the data has a wait time of about 10 minutes in most cases.
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot4.png" alt="" style="width:800px;"/>
+
+## Average Wait Times
+
+Sometimes it can be useful to just look at a few parks. In this case, let's look at how the average wait time in a Disney World park changes throughout a day. This graph shows not only the mean, but it also shows a confidence interval for that mean. 
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot5.png" alt="" style="width:1000px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot6.png" alt="" style="width:1000px;"/>
+
+
 
 
 
