@@ -25,4 +25,4 @@ Interestingly, open attractions consistently outnumbered closed attractions on S
 
 In addition to ride closures, another incredibly important question for theme park visitors is: **How do wait times change over the course of a day?**
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot3.png" alt="" style="width:1000px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot3.png" alt="" style="width:1100px;"/>
