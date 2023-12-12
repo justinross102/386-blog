@@ -34,3 +34,6 @@ As a budding statistician, I sometimes think it is worth looking at violin plots
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot4.png" alt="" style="width:800px;"/>
 
 Point estimates and Confidence Intervals
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot5.png" alt="" style="width:1000px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot6.png" alt="" style="width:1000px;"/>
