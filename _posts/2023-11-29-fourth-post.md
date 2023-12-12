@@ -11,17 +11,22 @@ As I mentioned in my previous post, I always look forward to trips to a theme pa
 
 # Questions and Visualizations
 
+## Number of Attractions
 As we begin an analysis of this data, the first question I have is: **Which theme park has the most attractions?**
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/graph1.png" alt="" style="width:800px;"/>
 
 From this graph, we see that Cedar Point and Six Flags Great Adventure have significantly more attractions than every other park. Animal Kingdom and Hollywood Studios from Disney World have the lowest number of attractions. The large difference in attraction counts across parks could be useful for trip planners to know, and future visualizations can help us see how wait times in small (few attractions) parks compare to wait times in large (many attractions) parks.
 
+## Ride Closures
+
 Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?**
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/graph2.png" alt="" style="width:1000px;"/>
 
 Interestingly, open attractions consistently outnumbered closed attractions on Saturday. On Friday, closed attractions outnumbered open attractions in both the morning and evening, suggesting that Friday afternoon is the best time to go if you're worried that your favorite ride will be closed!
+
+## Wait Times Throughout the Day
 
 In addition to ride closures, another incredibly important question for theme park visitors is: **How do wait times change over the course of a day?**
 
@@ -33,12 +38,14 @@ As a budding statistician, I sometimes think it is worth looking at violin plots
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot4.png" alt="" style="width:800px;"/>
 
-Point estimates and Confidence Intervals
+## Average Wait Times
+
+Sometimes it can be useful to just look at a few parks. In this case, let's look at how the average wait time in a Disney World park changes throughout a day. This graph shows not only the mean, but it also shows a confidence interval for that mean. 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot5.png" alt="" style="width:1000px;"/>
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot6.png" alt="" style="width:1000px;"/>
 
-#### Top 5 highest wait times for the Morning
+#### Morning
 
 | park                       | attraction                | wait time |
 |----------------------------|---------------------------|-----------|
@@ -48,7 +55,7 @@ Point estimates and Confidence Intervals
 | EPCOT                       | Remy's Ratatouille Adventure| 85 |
 | Islands of Adventure        | Hagrid's Magical Creatures Motorbike Adventure™| 85 |
 
-#### Top 5 highest wait times for the Afternoon
+#### Afternoon
 
 | park                       | attraction                | wait time |
 |----------------------------|---------------------------|-----------|
@@ -58,7 +65,7 @@ Point estimates and Confidence Intervals
 | Disneyland                 | Star Wars: Rise of the Resistance           | 85 |
 | Magic Kingdom              | Peter Pan's Flight                          | 85 |
 
-#### Top 5 highest wait times for the Evening
+#### Evening
 
 |                   park     |                     attraction | wait time |
 |----------------------------|--------------------------------|-------------|
