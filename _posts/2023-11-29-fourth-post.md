@@ -20,7 +20,7 @@ From this graph, we see that Cedar Point and Six Flags Great Adventure have sign
 
 ## Rides with the Highest Wait Times
 
-Another question I found myself asking was: **What attractions have the highest wait times in each park?** As I sought to identify the attractions with the highest wait times during different times of the day, I focused on the top 5 for each period. Interestingly, two parks consistently emerged as the frontrunners—Hollywood Studios and EPCOT—despite being among the smallest parks in terms of the number of attractions. Even Animal Kingdom, with the fewest attractions, managed to be among the top contenders during the morning and evening hours. Perhaps the smaller size of these parks contributes to higher wait times, but it would require formal analysis to determine if there truly is a relationship.
+Another question I found myself asking was: **What attractions have the highest wait times in each park?** As I sought to identify the attractions with the highest wait times during different times of the day, I focused on the top 5 for each period. Interestingly, two parks consistently emerged as the frontrunners—Hollywood Studios and EPCOT—despite being among the smallest parks in terms of the number of attractions. Even Animal Kingdom, with the fewest attractions, managed to be among the top contenders during the morning and evening hours. Perhaps the smaller size of these parks contributes to higher wait times.
 
 #### Morning
 
@@ -52,12 +52,16 @@ Another question I found myself asking was: **What attractions have the highest 
 |         Magic Kingdom      | Buzz Lightyear's Space Ranger Spin |  80     |
 |             **EPCOT**      |             Frozen Ever After  |       75    |
 
+## Wait Times and Attraction Counts
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot7.png" alt="" style="width:1000px;"/>
+
 ## Ride Closures
-Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?** It can be incredibly depressing to show up at a theme park only to find that you cannot ride your favorite ride! For this visualization, I filtered the data to only include attractions from Universal Studios Orlando and Islands of Adventure. I figured it would be more useful to look at ride closures at specific parks, rather than as an ensemble.
+Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?** It can be incredibly depressing to show up at a theme park only to find that you cannot ride your favorite ride! I thought it would be more useful to look at ride closures at specific parks, so for this visualization, I filtered the data to only include attractions from Universal Studios Orlando and Islands of Adventure.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot2.png" alt="" style="width:1000px;"/>
 
-Interestingly, Friday and Saturday appear to be essentially the same. Perhaps Friday afternoon had a couple more ride closures than Saturday afternoon, but clearly, the evening is when most ride closures are in effect. If I were headed to Universal Studios or Islands of Adventure on the weekend, I would probably try to ride all of my favorite rides before evening!
+Interestingly, Friday and Saturday appear to be essentially the same. Perhaps Friday afternoon had a couple more ride closures than Saturday afternoon, but clearly, the evening is when most ride closures are in effect. If I were headed to Universal Studios or Islands of Adventure on the weekend, I would probably try to ride all of my favorite rides before the evening!
 
 ## Wait Times Throughout the Day
 
@@ -73,15 +77,12 @@ As a budding statistician, I sometimes think it is worth looking at violin plots
 
 ## Average Wait Times
 
-Sometimes it can be useful to just look at a few parks. In this case, let's look at how the average wait time in a Disney World park changes throughout a day. This graph shows not only the mean, but it also shows a confidence interval for that mean. 
+To further explore how wait times change throughout the day, I created this point plot which shows the average wait times along with a confidence interval for each of the Disney World parks on Friday and Saturday. From these plots, we see that Animal Kingdom and Hollywood Studios begin each day with the highest average wait time. Only Hollywood Studios ends both days with the highest average wait time. Just like the tables shown above, these plots seem to suggest that smaller parks with fewer attractions have higher wait times. 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot5.png" alt="" style="width:1000px;"/>
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot6.png" alt="" style="width:1000px;"/>
 
+# Conclusion
 
-
-
-
-
-
-
+After conducting this EDA, I am most interested in determining if there is a relationship between the number of attractions in a park and the average wait time for that park. To answer this question I would need to collect more data over a longer period. This analysis only scratches the surface of what we can learn from analyzing theme park data. As one who loves both statistics and theme parks, I am grateful to those who collect data like this regularly and analyze it even more in-depth than I did in this post! I am also grateful to Zachary Bull, who gave me permission to use his [API](https://queue-times.com/en-US/pages/about) for this project. If you would like, feel free to visit the data and code I used to create the visualizations in this post. Thanks for reading!
+ 
