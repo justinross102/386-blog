@@ -58,3 +58,17 @@ Point estimates and Confidence Intervals
 | Disneyland                 | Star Wars: Rise of the Resistance           | 85 |
 | Magic Kingdom              | Peter Pan's Flight                          | 85 |
 
+
+|                   park     |                     attraction | wait time |
+|----------------------------|--------------------------------|-------------|
+|     Hollywood Studios      |               Slinky Dog Dash  |     120     |
+|        Animal Kingdom      |      Avatar Flight of Passage  |      105    |
+|  Islands of Adventure      |  Jurassic World VelociCoaster  |      105    |
+|         Magic Kingdom      | Buzz Lightyear's Space Ranger Spin |  80     |
+|                 EPCOT      |             Frozen Ever After  |       75    |
+
+
+
+
+
+
