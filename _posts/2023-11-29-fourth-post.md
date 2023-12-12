@@ -28,3 +28,6 @@ In addition to ride closures, another incredibly important question for theme pa
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot3.png" alt="" style="width:1100px;"/>
 
 From these side-by-side boxplots we see that across Friday and Saturday, the median wait time is consistently around 20 minutes. The only exceptions to that are Friday evening and Saturday Afternoon.
+
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot4.png" alt="" style="width:1100px;"/>
