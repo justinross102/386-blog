@@ -38,7 +38,7 @@ Point estimates and Confidence Intervals
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot5.png" alt="" style="width:1000px;"/>
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot6.png" alt="" style="width:1000px;"/>
 
-### Top 5 highest wait times for the Morning
+#### Top 5 highest wait times for the Morning
 
 | park                       | attraction                | wait time |
 |----------------------------|---------------------------|-----------|
@@ -48,7 +48,7 @@ Point estimates and Confidence Intervals
 | EPCOT                       | Remy's Ratatouille Adventure| 85 |
 | Islands of Adventure        | Hagrid's Magical Creatures Motorbike Adventure™| 85 |
 
-### Top 5 highest wait times for the Afternoon
+#### Top 5 highest wait times for the Afternoon
 
 | park                       | attraction                | wait time |
 |----------------------------|---------------------------|-----------|
@@ -58,6 +58,7 @@ Point estimates and Confidence Intervals
 | Disneyland                 | Star Wars: Rise of the Resistance           | 85 |
 | Magic Kingdom              | Peter Pan's Flight                          | 85 |
 
+#### Top 5 highest wait times for the Evening
 
 |                   park     |                     attraction | wait time |
 |----------------------------|--------------------------------|-------------|
