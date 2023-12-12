@@ -20,7 +20,7 @@ From this graph, we see that Cedar Point and Six Flags Great Adventure have sign
 
 ## Rides with the Highest Wait Times
 
-As I sought to identify the attractions with the highest wait times during different times of the day, I focused on the top 5 for each period. Interestingly, two parks consistently emerged as the frontrunners—Hollywood Studios and EPCOT—despite being among the smallest parks in terms of the number of attractions. Even Animal Kingdom, with the fewest attractions, managed to be among the top contenders during the morning and evening hours. Perhaps the smaller size of these parks contributes to higher wait times, but it would require formal analysis to determine if there truly is a relationship.
+Another question I found myself asking was: **What attractions have the highest wait times in each park?** As I sought to identify the attractions with the highest wait times during different times of the day, I focused on the top 5 for each period. Interestingly, two parks consistently emerged as the frontrunners—Hollywood Studios and EPCOT—despite being among the smallest parks in terms of the number of attractions. Even Animal Kingdom, with the fewest attractions, managed to be among the top contenders during the morning and evening hours. Perhaps the smaller size of these parks contributes to higher wait times, but it would require formal analysis to determine if there truly is a relationship.
 
 #### Morning
 
@@ -53,11 +53,11 @@ As I sought to identify the attractions with the highest wait times during diffe
 |             **EPCOT**      |             Frozen Ever After  |       75    |
 
 ## Ride Closures
-Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?**
+Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?** It can be incredibly depressing to show up at a theme park only to find that you cannot ride your favorite ride! For this visualization, I filtered the data to only include attractions from Universal Studios Orlando and Islands of Adventure. I figured it would be more useful to look at ride closures at specific parks, rather than as an ensemble.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot2.png" alt="" style="width:1000px;"/>
 
-Interestingly, open attractions consistently outnumbered closed attractions on Saturday. On Friday, closed attractions outnumbered open attractions in both the morning and evening, suggesting that Friday afternoon is the best time to go if you're worried that your favorite ride will be closed!
+Interestingly, Friday and Saturday appear to be essentially the same. Perhaps Friday afternoon had a couple more ride closures than Saturday afternoon, but clearly, the evening is when most ride closures are in effect. If I were headed to Universal Studios or Islands of Adventure on the weekend, I would probably try to ride all of my favorite rides before evening!
 
 ## Wait Times Throughout the Day
 
