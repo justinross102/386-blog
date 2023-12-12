@@ -26,19 +26,19 @@ As I sought to identify the attractions with the highest wait times during diffe
 
 | park                       | attraction                | wait time |
 |----------------------------|---------------------------|-----------|
-| Animal Kingdom              | Na'vi River Journey      | 120 |
-| Disneyland                  | Star Wars: Rise of the Resistance| 115 |
-| Hollywood Studios           | Slinky Dog Dash          | 115 |
-| EPCOT                       | Remy's Ratatouille Adventure| 85 |
-| Islands of Adventure        | Hagrid's Magical Creatures Motorbike Adventure™| 85 |
+| *Animal Kingdom*           | Na'vi River Journey      | 120 |
+| Disneyland                 | Star Wars: Rise of the Resistance| 115 |
+| **Hollywood Studios**      | Slinky Dog Dash          | 115 |
+| **EPCOT**                  | Remy's Ratatouille Adventure| 85 |
+| Islands of Adventure       | Hagrid's Magical Creatures Motorbike Adventure™| 85 |
 
 #### Afternoon
 
 | park                       | attraction                | wait time |
 |----------------------------|---------------------------|-----------|
 | Universal Studios Orlando  | Harry Potter and the Escape from Gringotts™ | 120 |
-| Hollywood Studios          | Star Wars: Rise of the Resistance           | 110 |
-| EPCOT                      | Test Track                                  | 90 |
+| **Hollywood Studios**      | Star Wars: Rise of the Resistance           | 110 |
+| **EPCOT**                  | Test Track                                  | 90 |
 | Disneyland                 | Star Wars: Rise of the Resistance           | 85 |
 | Magic Kingdom              | Peter Pan's Flight                          | 85 |
 
@@ -46,11 +46,11 @@ As I sought to identify the attractions with the highest wait times during diffe
 
 |                   park     |                     attraction | wait time |
 |----------------------------|--------------------------------|-------------|
-|     Hollywood Studios      |               Slinky Dog Dash  |     120     |
-|        Animal Kingdom      |      Avatar Flight of Passage  |      105    |
+  **Hollywood Studios**      |               Slinky Dog Dash  |     120     |
+|      *Animal Kingdom*      |      Avatar Flight of Passage  |      105    |
 |  Islands of Adventure      |  Jurassic World VelociCoaster  |      105    |
 |         Magic Kingdom      | Buzz Lightyear's Space Ranger Spin |  80     |
-|                 EPCOT      |             Frozen Ever After  |       75    |
+|             **EPCOT**      |             Frozen Ever After  |       75    |
 
 ## Ride Closures
 Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?**
