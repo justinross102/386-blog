@@ -55,7 +55,7 @@ As I sought to identify the attractions with the highest wait times during diffe
 ## Ride Closures
 Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?**
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/graph2.png" alt="" style="width:1000px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot2.png" alt="" style="width:1000px;"/>
 
 Interestingly, open attractions consistently outnumbered closed attractions on Saturday. On Friday, closed attractions outnumbered open attractions in both the morning and evening, suggesting that Friday afternoon is the best time to go if you're worried that your favorite ride will be closed!
 
