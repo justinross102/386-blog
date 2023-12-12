@@ -37,3 +37,14 @@ Point estimates and Confidence Intervals
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot5.png" alt="" style="width:1000px;"/>
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot6.png" alt="" style="width:1000px;"/>
+
+## Top 5 highest wait times for the Morning
+
+| park                       | attraction               |wait time |
+|----------------------------|---------------------------|----------|
+| Animal Kingdom              | Na'vi River Journey      | 120 |
+| Disneyland                  | Star Wars: Rise of the Resistance| 115 |
+| Hollywood Studios           | Slinky Dog Dash          | 115 |
+| EPCOT                       | Remy's Ratatouille Adventure| 85 |
+| Islands of Adventure        | Hagrid's Magical Creatures Motorbike Adventure™| 85 |
+
