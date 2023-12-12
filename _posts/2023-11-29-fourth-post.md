@@ -54,7 +54,9 @@ Another question I found myself asking was: **What attractions have the highest 
 
 ## Wait Times and Attraction Counts
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot7.png" alt="" style="width:1000px;"/>
+This scatter plot allows us to further examine the relationship between a park's number of attractions and average wait time. From the data I collected for this analysis, there appears to be an extremely weak negative correlation between these two variables. While the correlation is extremely weak, the overall patterns suggest that parks with a higher number of attractions tend to have slightly shorter average wait times. However, it's essential to note that correlation does not imply causation, and various other factors could contribute to these observations.
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/plot7.png" alt="" style="width:800px;"/>
 
 ## Ride Closures
 Another highly important question for theme park visitors could be: **What is the difference in ride closures between Friday and Saturday?** It can be incredibly depressing to show up at a theme park only to find that you cannot ride your favorite ride! I thought it would be more useful to look at ride closures at specific parks, so for this visualization, I filtered the data to only include attractions from Universal Studios Orlando and Islands of Adventure.
