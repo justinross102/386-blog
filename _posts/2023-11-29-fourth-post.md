@@ -11,7 +11,7 @@ As I mentioned in my previous post, I always look forward to trips to a theme pa
 
 # Questions and Visualizations
 
-As we begin an analysis of this data, the first question I have is: **which theme park has the most attractions?**
+As we begin an analysis of this data, the first question I have is: **Which theme park has the most attractions?**
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/graph1.png" alt="" style="width:800px;"/>
 
@@ -26,3 +26,5 @@ Interestingly, open attractions consistently outnumbered closed attractions on S
 In addition to ride closures, another incredibly important question for theme park visitors is: **How do wait times change over the course of a day?**
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot3.png" alt="" style="width:1100px;"/>
+
+From these side-by-side boxplots we see that across Friday and Saturday, the median wait time is consistently around 20 minutes. The only exceptions to that are Friday evening and Saturday Afternoon.
