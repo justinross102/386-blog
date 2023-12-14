@@ -16,7 +16,7 @@ In this blog post, I will demonstrate my methods for collecting data on theme pa
 
 I gathered the data for my research from the [Theme Park Wait Times API](https://queue-times.com/en-US/pages/about). This unofficial API is free and easy to use and provides accurately updated wait times for attractions from theme parks all over the world. This project will only feature theme parks in the United States.
 
-This API gives each park a unique ID, so to assemble a dataset I needed to know the IDs of the parks I wanted to include. I used to following code to extract the needed IDs:
+This API gives each park a unique ID, so to assemble a dataset I needed to know the IDs of the parks I wanted to include. I used the following code to extract the needed IDs:
 ```python
 url = "https://queue-times.com/parks.json"
 response = requests.get(url)
@@ -153,8 +153,7 @@ After running all of this code and printing the resulting dataframe, we get a da
 ```
 
 # Combining Data for Friday and Saturday
-
-Once I got the API working, I collected data from it during the Morning, Afternoon, and Evening on a Friday and Saturday. I combined all 6 dataframes together, adding a column to represent the day of the week. I had to do some difficult wrangling to create 3 columns for both the `wait_time` and `is_open` variables, depending on the time of day.
+Sadly, this API only provides current ride information, so I could not build a dataset from wait times from previous weeks and months. Instead, I collected data using the API during the Morning, Afternoon, and Evening on a Friday and Saturday (after all, the weekend is the only time a college student should go to a theme park during a semester). I combined all 6 dataframes together, adding a column to represent the day of the week. I had to do some difficult wrangling to create 3 columns for both the `wait_time` and `is_open` variables, depending on the time of day.
 
 The finished dataframe shows every attraction twice, once for Friday and once for Saturday. Each row has three `is_open` columns and three `wait_time` columns, for Morning, Afternoon, and Evening. When printed, it looks like this:
 ```python
@@ -171,8 +170,10 @@ The finished dataframe shows every attraction twice, once for Friday and once fo
 1101               The Simpsons Ride™  World Expo  Universal Studios Orlando    Friday      True      True     False         20.0         25.0          0.0
 1102               The Simpsons Ride™  World Expo  Universal Studios Orlando  Saturday      True      True     False         25.0         60.0          0.0
 ```
+If you would like to see the data and code I've described in this post, you can visit my GitHub repository [here](https://github.com/justinross102/ThemeParkWaitTimes_EDA).
 
-I am extremely grateful to the creator of the [Theme Park Wait Times API](https://queue-times.com/en-US/pages/about) Zachary Bull, who gave me permission to use his API for this project. It was difficult to collect the data and wrangle it into its final form, but it was a perfect opportunity for me to practice the skills we've been learning in class. I look forward to exploring this data in my next blog post!
+# Ethical Considerations
+I am extremely grateful to the creator of the [Theme Park Wait Times API](https://queue-times.com/en-US/pages/about) Zachary Bull, who gave me permission to use his API for this project. It did not require an API key, but I was careful to collect only the data that was needed for this project. It was difficult to collect the data and wrangle it into its final form, but it was a perfect opportunity for me to practice the skills we've been learning in class. I look forward to exploring this data in my next blog post!
 
 
 
