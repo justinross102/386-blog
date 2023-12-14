@@ -7,7 +7,7 @@ author: Justin Ross
 classes: wide
 ---
 
-As I mentioned in my previous post, I always look forward to trips to a theme park. Most people would agree that the worst part of these trips is always waiting in line. Thus, my goal is to determine the best time to go to a theme park. I have already collected data from during the Morning, Afternoon, and Evening on a Friday and Saturday. This blog post will showcase insightful visualizations made from this data, and will hopefully shed some light on the best time of the weekend to visit a theme park!
+As I mentioned in my previous post, I always look forward to trips to a theme park. Most people would agree that the worst part of these trips is always waiting in line. Thus, my goal is to determine the best time to go to a theme park. I have already collected data from multiple parks during the morning, afternoon, and evening on a Friday and Saturday. This blog post will showcase insightful visualizations made from this data, and will hopefully shed some light on the best time of the weekend to visit a theme park!
 
 # Questions and Visualizations
 
@@ -20,7 +20,7 @@ From this graph, we see that Cedar Point and Six Flags Great Adventure have sign
 
 ## Rides with the Highest Wait Times
 
-Another question I found myself asking was: **What attractions have the highest wait times in each park?** As I sought to identify the attractions with the highest wait times during different times of the day, I focused on the top 5 for each period. Interestingly, two parks consistently emerged as the frontrunners—Hollywood Studios and EPCOT—despite being among the smallest parks in terms of the number of attractions. Even Animal Kingdom, with the fewest attractions, managed to be among the top contenders during the morning and evening hours. Perhaps the smaller size of these parks contributes to higher wait times.
+Another question I found myself asking was: **What attractions have the highest wait times?** As I sought to identify the attractions with the highest wait times during different times of the day, I focused on the top 5 for each period. Interestingly, two parks consistently emerged as the frontrunners—Hollywood Studios and EPCOT—despite being among the smallest parks in terms of the number of attractions. Even Animal Kingdom, with the fewest attractions, managed to be among the top contenders during the morning and evening hours. Perhaps the smaller size of these parks contributes to higher wait times.
 
 #### Morning
 
@@ -54,7 +54,7 @@ Another question I found myself asking was: **What attractions have the highest 
 
 ## Wait Times and Attraction Counts
 
-This scatter plot allows us to further examine the relationship between a park's number of attractions and average wait time. From the data I collected for this analysis, there appears to be an extremely weak negative correlation between these two variables. While the correlation is extremely weak, the overall patterns suggest that parks with a higher number of attractions tend to have slightly shorter average wait times. However, it's essential to note that correlation does not imply causation, and various other factors could contribute to these observations.
+This scatter plot allows us to further examine the relationship between a park's number of attractions and average wait time. Thus, we can use as we consider the question **Is there a linear relationship between average wait time and number of attractions in a park?** From the data I collected for this analysis, there appears to be an extremely weak negative correlation between these two variables. While the correlation is extremely weak, the overall patterns suggest that parks with a higher number of attractions tend to have slightly shorter average wait times. However, it's essential to note that correlation does not imply causation, and various other factors could contribute to these observations.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot7.png" alt="" style="width:800px;"/>
 
