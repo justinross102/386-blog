@@ -79,7 +79,9 @@ As a budding statistician, I sometimes think it is worth looking at violin plots
 
 ## Average Wait Times
 
-To further explore how wait times change throughout the day, I created this point plot which shows the average wait times along with a confidence interval for each of the Disney World parks on Friday and Saturday. From these plots, we see that Animal Kingdom and Hollywood Studios begin each day with the highest average wait time. Only Hollywood Studios ends both days with the highest average wait time. Just like the tables shown above, these plots seem to suggest that smaller parks with fewer attractions have higher wait times. 
+To further explore how wait times change throughout the day, I created this point plot which shows the average wait times along with a confidence interval for each of the Disney World parks on Friday and Saturday. A confidence interval describes the variation around a statistical estimate, which in this case is the average wait time. They show a range of values that represent what the estimate is likely to be. In these plots, the confidence interval is represented by the vertical line accompanying each point.
+
+From these plots, we see that Animal Kingdom and Hollywood Studios begin each day with the highest average wait time. Only Hollywood Studios ends both days with the highest average wait time. Just like the tables shown above, these plots seem to suggest that smaller parks with fewer attractions have higher wait times. 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot5.png" alt="" style="width:1000px;"/>
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot6.png" alt="" style="width:1000px;"/>
