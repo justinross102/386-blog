@@ -153,7 +153,7 @@ After running all of this code and printing the resulting dataframe, we get a da
 ```
 
 # Combining Data for Friday and Saturday
-Sadly, this API only provides current ride information, so I could not build a dataset from wait times from previous weeks and months. Instead, I collected data using the API during the Morning, Afternoon, and Evening on a Friday and Saturday (after all, the weekend is the only time a college student should go to a theme park during a semester). I combined all 6 dataframes together, adding a column to represent the day of the week. I had to do some difficult wrangling to create 3 columns for both the `wait_time` and `is_open` variables, depending on the time of day.
+Sadly, this API only provides current ride information, so I could not build a dataset of wait times from previous weeks and months. Instead, I collected data using the API during the Morning, Afternoon, and Evening on a Friday and Saturday (after all, the weekend is the only time a college student should go to a theme park during a semester). I combined all 6 dataframes together, adding a column to represent the day of the week. I had to do some difficult wrangling to create 3 columns for both the `wait_time` and `is_open` variables, depending on the time of day.
 
 The finished dataframe shows every attraction twice, once for Friday and once for Saturday. Each row has three `is_open` columns and three `wait_time` columns, for Morning, Afternoon, and Evening. When printed, it looks like this:
 ```python
