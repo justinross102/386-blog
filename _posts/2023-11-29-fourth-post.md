@@ -54,7 +54,7 @@ Another question I found myself asking was: **What attractions have the highest 
 
 ## Wait Times and Attraction Counts
 
-This scatter plot allows us to further examine the relationship between a park's number of attractions and average wait time. Thus, we can use as we consider the question **Is there a linear relationship between average wait time and number of attractions in a park?** From the data I collected for this analysis, there appears to be an extremely weak negative correlation between these two variables. While the correlation is extremely weak, the overall patterns suggest that parks with a higher number of attractions tend to have slightly shorter average wait times. However, it's essential to note that correlation does not imply causation, and various other factors could contribute to these observations.
+This scatter plot allows us to further examine the relationship between a park's number of attractions and average wait time. Thus, we can use it as we consider the question **Is there a linear relationship between average wait time and number of attractions in a park?** From the data I collected for this analysis, there is an extremely weak negative correlation between these two variables. However, it is important to note that this dataset is relatively small, and therefore we really can't draw broad conclusions from it. 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot7.png" alt="" style="width:800px;"/>
 
