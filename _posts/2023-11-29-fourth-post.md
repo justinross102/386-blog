@@ -67,7 +67,7 @@ Interestingly, Friday and Saturday appear to be essentially the same. Perhaps Fr
 
 ## Wait Times Throughout the Day
 
-In addition to ride closures, another incredibly important question for theme park visitors should be: **How do wait times change over the course of a day?** For park visitors planning to ride hugely popular rides like [Hagrid’s Magical Creatures Motorbike Adventure](https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hagrids-magical-creatures-motorbike-adventure), this information could be useful for optimizing the order of the rides you want to ride.
+In addition to ride closures, another incredibly important question for theme park visitors should be: **How do wait times change over the course of a day?** Park visitors planning to ride hugely popular rides like [Hagrid’s Magical Creatures Motorbike Adventure](https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hagrids-magical-creatures-motorbike-adventure), could use this information to optimize the order of the rides they want to ride.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot3.png" alt="" style="width:1100px;"/>
 
@@ -75,20 +75,22 @@ From these side-by-side boxplots we see that across Friday and Saturday, the med
 
 As a budding statistician, I sometimes think it is worth looking at violin plots in addition to boxplots. Both plots display essentially the same information, but the violin plot is a useful tool because it depicts summary statistics and the range of the data while also showing the density of the response variable.
 
-In this case, the boxplots show that the median wait time is usually pretty close to 20 minutes, but the violin plots below show that the majority of the data has a wait time of about 10 minutes in most cases. This should be comforting to all of us, as it means that the majority of the rides have wait times of 20 minutes or less!
+In this case, while boxplots show that the median wait time is usually pretty close to 20 minutes, the violin plots below show that the majority of the data has a wait time of about 10 minutes. This should be comforting to all of us, as it means that the majority of the rides have wait times of 20 minutes or less!
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot4.png" alt="" style="width:800px;"/>
 
 ## Average Wait Times
 
-To further explore how wait times change throughout the day, I created this point plot which shows the average wait times along with a confidence interval for each of the Disney World parks on Friday and Saturday. A confidence interval describes the variation around a statistical estimate, which in this case is the average wait time. They show a range of values that represent what the estimate is likely to be if we were trying to predict it. In these plots, the confidence interval is represented by the vertical line accompanying each point.
+To further explore how wait times change throughout the day, I created this point plot which shows the average wait times along with a confidence interval for each of the Disney World parks on Friday and Saturday. A confidence interval describes the variation around a statistical estimate, which in this case is the average wait time. In these plots, the confidence interval is represented by the vertical line accompanying each point. In the context of this data, a wide interval suggests that the average wait time could fluctuate significantly, making it hard to predict. Conversely, a narrower interval implies a more stable average wait time, which results in a more reliable estimate.
 
-From these plots, we see that Animal Kingdom and Hollywood Studios begin each day with the highest average wait time. Only Hollywood Studios ends both days with the highest average wait time. Just like the tables shown above, these plots seem to suggest that smaller parks with fewer attractions have higher wait times. 
+From these plots, we see that Animal Kingdom and Hollywood Studios begin each day with the highest average wait time. Only Hollywood Studios ends both days with the highest average wait time. Also, Magic Kingdom has an especially wide interval, suggesting that its average wait time is inconsistent. The other parks have relatively shorter intervals.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot5.png" alt="" style="width:1000px;"/>
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot_final.png" alt="" style="width:1000px;"/>
 
 # Conclusion
 
-After conducting this EDA, I am most interested in determining if there is a relationship between the number of attractions in a park and the average wait time for that park. To answer this question I would need to collect more data over a longer period. This analysis only scratches the surface of what we can learn from analyzing theme park data. As one who loves both statistics and theme parks, I am grateful to those who collect data like this regularly and analyze it even more in-depth than I did in this post! I am also grateful to Zachary Bull, who gave me permission to use his [API](https://queue-times.com/en-US/pages/about) for this project. If you would like, feel free to visit my [Github Repository](https://github.com/justinross102/ThemeParkWaitTimes_EDA) which contains the data and code I used to create the visualizations in this post. You can also explore this data yourself using this interactive [dashboard](https://themeparkdashboard-z4tl39e6dn5m2zvxakpoje.streamlit.app).  Thanks for reading!
+After conducting this EDA, I am most interested in determining if there is a relationship between the number of attractions in a park and the average wait time for that park. Though I pondered this question throughout this post, I currently do not have enough data to appropriately draw any definitive conclusions. To answer this question I would need to collect more data from more parks, over a longer period.
+
+Truly, this analysis only scratches the surface of what we can learn from analyzing theme park data. As one who loves both statistics and theme parks, I am grateful to those who collect data like this regularly and analyze it even more in-depth than I did in this post! I am also grateful to Zachary Bull, who gave me permission to use his [API](https://queue-times.com/en-US/pages/about) for this project. If you would like, feel free to visit my [Github Repository](https://github.com/justinross102/ThemeParkWaitTimes_EDA) which contains the data and code I used to create the visualizations in this post. You can also explore this data yourself using this interactive [dashboard](https://themeparkdashboard-z4tl39e6dn5m2zvxakpoje.streamlit.app).  Thanks for reading!
  
