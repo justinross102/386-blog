@@ -73,7 +73,9 @@ In addition to ride closures, another incredibly important question for theme pa
 
 From these side-by-side boxplots we see that across Friday and Saturday, the median wait time is consistently around 20 minutes. The only exceptions to that are Friday evening and Saturday Afternoon.
 
-As a budding statistician, I sometimes think it is worth looking at violin plots in addition to boxplots. Both plots display essentially the same information, but the violin plot is a useful tool because it depicts summary statistics and the range of the data while also showing the density of the response variable. In this case, the boxplots show that the median is usually pretty close to 20, but the violin plots below show that the majority of the data has a wait time of about 10 minutes in most cases.
+As a budding statistician, I sometimes think it is worth looking at violin plots in addition to boxplots. Both plots display essentially the same information, but the violin plot is a useful tool because it depicts summary statistics and the range of the data while also showing the density of the response variable.
+
+In this case, the boxplots show that the median is usually pretty close to 20, but the violin plots below show that the majority of the data has a wait time of about 10 minutes in most cases. This should be comforting to all of us, as it means that the majority of the rides have wait times of 20 minutes or less!
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot4.png" alt="" style="width:800px;"/>
 
