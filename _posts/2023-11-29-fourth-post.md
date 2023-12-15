@@ -67,7 +67,7 @@ Interestingly, Friday and Saturday appear to be essentially the same. Perhaps Fr
 
 ## Wait Times Throughout the Day
 
-In addition to ride closures, another incredibly important question for theme park visitors is: **How do wait times change over the course of a day?**
+In addition to ride closures, another incredibly important question for theme park visitors should be: **How do wait times change over the course of a day?** For park visitors planning to ride hugely popular rides like [Hagrid’s Magical Creatures Motorbike Adventure](https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hagrids-magical-creatures-motorbike-adventure), this information could be useful for optimizing the order of the rides you want to ride.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot3.png" alt="" style="width:1100px;"/>
 
@@ -75,7 +75,7 @@ From these side-by-side boxplots we see that across Friday and Saturday, the med
 
 As a budding statistician, I sometimes think it is worth looking at violin plots in addition to boxplots. Both plots display essentially the same information, but the violin plot is a useful tool because it depicts summary statistics and the range of the data while also showing the density of the response variable.
 
-In this case, the boxplots show that the median is usually pretty close to 20, but the violin plots below show that the majority of the data has a wait time of about 10 minutes in most cases. This should be comforting to all of us, as it means that the majority of the rides have wait times of 20 minutes or less!
+In this case, the boxplots show that the median wait time is usually pretty close to 20 minutes, but the violin plots below show that the majority of the data has a wait time of about 10 minutes in most cases. This should be comforting to all of us, as it means that the majority of the rides have wait times of 20 minutes or less!
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/plot4.png" alt="" style="width:800px;"/>
 
