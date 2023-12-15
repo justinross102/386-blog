@@ -170,7 +170,7 @@ The finished dataframe shows every attraction twice, once for Friday and once fo
 1101               The Simpsons Ride™  World Expo  Universal Studios Orlando    Friday      True      True     False         20.0         25.0          0.0
 1102               The Simpsons Ride™  World Expo  Universal Studios Orlando  Saturday      True      True     False         25.0         60.0          0.0
 ```
-If you would like to see the data and code I've described in this post, you can visit my GitHub repository [here](https://github.com/justinross102/ThemeParkWaitTimes_EDA). You can also explore this data yourself using this interactive [dashboard](https://themeparkdashboard-z4tl39e6dn5m2zvxakpoje.streamlit.app).
+If you would like to see the data and code I've described in this post, you can visit my GitHub repository [here](https://github.com/justinross102/ThemeParkWaitTimes_EDA). The code can be found in a file called `data_collection.py` (the more difficult wrangling that I didn't show here begins on line 137). You can explore the collected data yourself using this interactive [dashboard](https://themeparkdashboard-z4tl39e6dn5m2zvxakpoje.streamlit.app).
 
 # Ethical Considerations
 I am extremely grateful to the creator of the [Theme Park Wait Times API](https://queue-times.com/en-US/pages/about) Zachary Bull, who gave me permission to use his API for this project. It did not require an API key, but I was careful to collect only the data that was needed for this project. It was difficult to collect the data and wrangle it into its final form, but it was a perfect opportunity for me to practice the skills we've been learning in class. I look forward to exploring this data in my next blog post!
