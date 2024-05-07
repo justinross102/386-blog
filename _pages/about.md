@@ -8,6 +8,7 @@ header:
 collection: 
 permalink: /about/
 author_profile: true
+classes: wide
 ---
 
 ## Education
