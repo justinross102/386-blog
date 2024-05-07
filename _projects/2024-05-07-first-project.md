@@ -13,13 +13,13 @@ classes: wide
 
 In our analysis, we found that student learning was most associated with performance on midterm exams. Homework scores were also a good indicator of student learning but were not determined to be statistically significant. We determined that there was no semester that was significantly worse or better in terms of student learning. The number of students in a section and quiz scores were not found to be statistically significant.
 
-# Introduction 
+## Introduction 
 The purpose of this study is to evaluate the effect of various learning activities on student learning in an introductory statistics class. Our data consists of average scores on 3 unique learning activities administered by a statistics department over several semesters. The learning activities include exams, homework, and quizzes, with student learning measured by their performance on the final exam. From our analysis, we hope to determine:
 - Which of these three learning activities are most closely associated with student learning
 - If these learning activities explain student learning, and
 - If there are semesters that had better or worse student learning than average
 
-## Graphical Summaries
+### Graphical Summaries
 
 
 When examining the data, we found that most of the learning activities have a very low correlation with the average final exam score. Exam 3 has the highest correlation with the final exam with a correlation of 0.84, but the next highest correlation with the final exam is Exam 2’s correlation of 0.44. This suggests that some of our explanatory variables may not have a strong linear relationship with average final exam score. We are also concerned about differences in class sizes. Class sizes in this data range from 280 to 873 students, and we are concerned that these differences in class size may affect the variability in the average final exam scores.
@@ -28,7 +28,7 @@ If these issues are not addressed, our standard errors will be inaccurate. Inacc
 
 To analyze this data, we plan to use a multiple linear regression model. Multiple linear regression seems like the best choice because it can include several explanatory variables in the process of explaining the response variable. We will include all of the variables provided in the data as well as interaction terms related to class size. This should improve our model’s ability to capture the relationship between learning activities and average final exam scores.
 
-# Statistical Model
+## Statistical Model
 
 $$
 \mathbf{y} = \mathbf{X\beta} + \mathbf{\epsilon} \quad \text{,} \quad \mathbf{y} \sim N(\mathbf{X\beta}, \sigma^2\mathbf{D})
@@ -93,7 +93,7 @@ For our analysis, there are four assumptions that must be met in order for our i
 
 * Equal Variances. The variance of the residuals should be constant across all of the explanatory variables
 
-# Model Validation
+## Model Validation
 
 These added variable plots look sufficiently linear for the linearity assumption to be met. There are no obvious non-linear trends in any of the plots for numeric variables. In our analysis we are treating Semester as a category, so we are not concerned about the linearity of the Semester variables.
 
@@ -129,7 +129,7 @@ To determine how well our model fits the data, we performed leave-one-out cross 
 
 Our primary research questions did not involve predictions, so we did not make predictions for new observations outside of our cross validation.
 
-# Analysis Results
+## Analysis Results
 
 From hypothesis tests on the coefficients, we have determined that Exams are associated with improved learning. We have determined that their effects are as follows (holding all else constant):
 
@@ -141,7 +141,7 @@ From hypothesis tests on the coefficients, we have determined that Exams are ass
 
 To determine if there were any semesters that were significantly better or worse in terms of student learning, we fit two models: one with all of the variables and one that excluded the semester variable. We performed an F-test on these different models, and the p-value of 0.0918 indicated that there was not a significant difference between these models. There is insufficient evidence to conclude that one semester is significantly better or worse than another in terms of student learning.
 
-# Conclusions
+## Conclusions
 
 Our analysis indicates that midterm exams are the best indicators of student performance on the final exam. Homework scores were a good indicator of student performance on the final exam but not as much as the exams. Quiz scores have a very minimal effect final exam scores, so they should not be prioritized. We suggest that the department could create a better learning environment by holding exam reviews both before and after the exams are administered.
 
