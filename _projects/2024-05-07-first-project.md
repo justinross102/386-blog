@@ -1,5 +1,6 @@
 ---
 title:  "Project 1: Pedagogy"
+author: Justin Ross
 #description: "Tips and Best Practices for Effective Data Graphing" 
 image: /assets/images/computer_with_bar_chart.png
 layout: posts
@@ -10,8 +11,6 @@ classes: wide
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-
-# Executive Summary 
 In our analysis, we found that student learning was most associated with performance on midterm exams. Homework scores were also a good indicator of student learning but were not determined to be statistically significant. We determined that there was no semester that was significantly worse or better in terms of student learning. The number of students in a section and quiz scores were not found to be statistically significant.
 
 # Introduction 
@@ -110,9 +109,9 @@ After verifying that the necessary assumptions are met, this is the model that w
 |:-----------|:---------|:-----------|:---------|:------|
 |(Intercept) |-20.678894| 14.106414  |-1.465921 | 0.1648|
 |NStudents   |  0.000084|  0.000301  |0.279317  |0.7841|
-|$\mathbf{Exam1}$ |  0.174047|  0.072629  |2.396391  |$\mathbf{0.0311}$|
-|$\mathbf{Exam2}$ | 0.298527 |  0.081761  |3.651215  |$\mathbf{0.0026}$|
-|$\mathbf{Exam3}$ | 0.444123 |  0.036699 |12.101756  |$\mathbf{0.0000}$|
+|**Exam1** |  0.174047|  0.072629  |2.396391  |**0.0311**|
+|**Exam2** | 0.298527 |  0.081761  |3.651215  |**0.0026**|
+|**Exam3** | 0.444123 |  0.036699 |12.101756  |**0.0000**|
 |HW          | 0.347460 |  0.165549  |2.098834  |0.0545|
 |Quiz        | 0.017499 |  0.033726  |0.518872  |0.6120|
 |Semester2  |   0.314248|  0.312913  |1.004268  |0.3323|
