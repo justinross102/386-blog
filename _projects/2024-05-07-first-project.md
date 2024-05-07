@@ -26,7 +26,9 @@ To analyze this data, we plan to use a multiple linear regression model. Multipl
 
 # Statistical Model
 
-$$\mathbf{y} = \mathbf{X\beta} + \mathbf{\epsilon} \quad \text{,} \quad \mathbf{y} \sim N(\mathbf{X\beta}, \sigma^2\mathbf{D})$$
+$$
+\mathbf{y} = \mathbf{X\beta} + \mathbf{\epsilon} \quad \text{,} \quad \mathbf{y} \sim N(\mathbf{X\beta}, \sigma^2\mathbf{D})
+$$
 
 $$
 \begin{pmatrix}
@@ -65,7 +67,6 @@ $$
 \text{Var}(\epsilon_i) = \frac{\sigma^2}{NStudents_i}, \quad D = \begin{pmatrix} d_{11} & 0 & 0 & \cdots & 0 \\ 0 & d_{22} & 0 & \cdots & 0 \\ \vdots & 0 & \ddots & \ddots & \vdots \\ 0 & 0 & \cdots & 0 & d_{nn} \\ \end{pmatrix}
 $$
 
-
 * $\mathbf{y}$ is a column vector of the response variable observations (average final exam score). 
 
 * $\mathbf{X}$ is a matrix of the explanatory variables. Each row represents an observation and each column represents one of the variables (NStudents, Exam1, Exam2, etc).
@@ -77,6 +78,7 @@ $$
 * $\sigma^2$ represents the variance of the average Final Exam score in the data. 
 
 * $\mathbf{D}$ represents a diagonal matrix where each diagonal element corresponds to the unique variance of each observation in the data. Larger values of $d_{ii}$ represent a larger variance for the ith observation. The off-diagonal elements are all zero because we assume that the errors are not correlated with each other.
+
 
 
 
