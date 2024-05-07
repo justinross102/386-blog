@@ -72,17 +72,18 @@ $$
 \text{Var}(\epsilon_i) = \frac{\sigma^2}{NStudents_i}, \quad D = \begin{pmatrix} d_{11} & 0 & 0 & \cdots & 0 \\ 0 & d_{22} & 0 & \cdots & 0 \\ \vdots & 0 & \ddots & \ddots & \vdots \\ 0 & 0 & \cdots & 0 & d_{nn} \\ \end{pmatrix}
 $$
 
-* $\mathbf{y}$ is a column vector of the response variable observations (average final exam score). 
+* **𝐲** is a column vector of the response variable observations (average final exam score).
 
-* $\mathbf{X}$ is a matrix of the explanatory variables. Each row represents an observation and each column represents one of the variables (NStudents, Exam1, Exam2, etc).
+* **𝐗** is a matrix of the explanatory variables. Each row represents an observation and each column represents one of the variables (NStudents, Exam1, Exam2, etc).
 
-* $\beta$ is a column vector of coefficients. $\beta_0$ represents the intercept and the rest correspond to individual explanatory variables in the $\mathbf{X}$ matrix.
+* **β** is a column vector of coefficients. **β₀** represents the intercept and the rest correspond to individual explanatory variables in the **𝐗** matrix.
 
-* $\epsilon$ is a column vector of residuals (the difference between the observed and predicted values for average final exam score)
+* **𝜖** is a column vector of residuals (the difference between the observed and predicted values for average final exam score).
 
-* $\sigma^2$ represents the variance of the average Final Exam score in the data. 
+* **σ²** represents the variance of the average Final Exam score in the data.
 
-* $\mathbf{D}$ represents a diagonal matrix where each diagonal element corresponds to the unique variance of each observation in the data. Larger values of $d_{ii}$ represent a larger variance for the ith observation. The off-diagonal elements are all zero because we assume that the errors are not correlated with each other.
+* **𝐃** represents a diagonal matrix where each diagonal element corresponds to the unique variance of each observation in the data. Larger values of **dᵢᵢ** represent a larger variance for the ith observation. The off-diagonal elements are all zero because we assume that the errors are not correlated with each other.
+
 
 
 
