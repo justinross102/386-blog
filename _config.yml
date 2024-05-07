@@ -301,4 +301,5 @@ defaults:
 collections:
   projects:
     output: true
+    author_profile: true
 
