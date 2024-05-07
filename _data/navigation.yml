@@ -2,7 +2,7 @@
 main:
   - title: "Blog Posts"
     url: /posts/
-  - title: "Kaggle Competitions"
-    url: /competitions/
+  - title: "Projects"
+    url: /projects/
   - title: "About"
     url: /about/
