@@ -18,12 +18,12 @@ feature_row:
     btn_class: "btn--info"
     btn_label: "Go to Blog Posts"
   - image_path: /assets/images/competition.jpg
-    alt: "competitions"
-    title: "Kaggle Competitions"
-    excerpt: "See code and scores from various Kaggle Competitions."
-    url: "/assignments/"
+    alt: "projects"
+    title: "Projects"
+    excerpt: "See written reports code from various assignments and projects."
+    url: "/projects/"
     btn_class: "btn--info"
-    btn_label: "Go to Kaggle Competitions"  
+    btn_label: "Go to Projects"  
   - image_path: /assets/images/jonas-jacobsson-0FRJ2SCuY4k-unsplash.jpg
     alt: "bio"
     title: "About Me"
