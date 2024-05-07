@@ -2,7 +2,7 @@
 title:  "Project 1: Pedagogy"
 #description: "Tips and Best Practices for Effective Data Graphing" 
 image: /assets/images/computer_with_bar_chart.png
-layout: post
+layout: posts
 classes: wide
 ---
 
