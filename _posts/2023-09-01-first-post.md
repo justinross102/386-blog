@@ -1,6 +1,5 @@
 ---
 title:  "Data Visualization Made Simple: Creating Graphs in R"
-author: Justin Ross
 description: "Tips and Best Practices for Effective Data Graphing" 
 image: /assets/images/computer_with_bar_chart.png
 classes: wide
