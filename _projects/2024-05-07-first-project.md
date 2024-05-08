@@ -50,18 +50,14 @@ Final_n
 \end{pmatrix}
 =
 \begin{pmatrix}
-1 & NStudents_1 & Exam1_1 & \ldots & Semester10_1\\
-1 & NStudents_2 & Exam1_2 & \ldots & Semester10_2\\
-\vdots & \vdots & \vdots & & \vdots\\
-1 & NStudents_n & Exam1_n & \ldots & Semester10_n\\
+1 & NStudents_1 & \ldots & Semester10_1\\
+1 & NStudents_2 & \ldots & Semester10_2\\
+\vdots & \vdots & & \vdots\\
+1 & NStudents_n & \ldots & Semester10_n\\
 \end{pmatrix}
 \begin{pmatrix}
 \beta_0 \\
 \beta_{NStudents} \\
-\beta_{Exam1} \\
-\beta_{Exam2} \\
-\beta_{Exam3} \\
-\beta_{HW} \\
 \vdots \\
 \beta_{Semester10} \\
 \end{pmatrix}
