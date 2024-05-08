@@ -20,8 +20,8 @@ The purpose of this study is to evaluate the effect of various learning activiti
 
 ### Graphical Summaries
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot1.jpeg" alt="" style="width:1000px;"/>
 <div style="text-align:center;">
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot1.jpeg" alt="" style="width:1000px;"/>
   <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot2.jpeg" alt="" style="width:600px;"/>
 </div>
 
