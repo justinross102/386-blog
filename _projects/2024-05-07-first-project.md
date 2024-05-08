@@ -22,6 +22,9 @@ The purpose of this study is to evaluate the effect of various learning activiti
 
 <div style="text-align:center;">
   <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot1.jpeg" alt="" style="width:1000px;"/>
+</div>
+
+<div style="text-align:center;">
   <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot2.jpeg" alt="" style="width:600px;"/>
 </div>
 
@@ -99,9 +102,17 @@ For our analysis, there are four assumptions that must be met in order for our i
 
 ## Model Validation
 
+<div style="text-align:center;">
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot3.jpeg" alt="" style="width:1000px;"/>
+</div>
+
 These added variable plots look sufficiently linear for the linearity assumption to be met. There are no obvious non-linear trends in any of the plots for numeric variables. In our analysis we are treating Semester as a category, so we are not concerned about the linearity of the Semester variables.
 
 This data was collected from past semesters of an introductory statistics class. There is no reason for us to believe that the average final exam score of one section would affect the average final exam score of another section. Thus, we are confident that the independence assumption is met.
+
+<div style="text-align:center;">
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot4.jpeg" alt="" style="width:1000px;"/>
+</div>
 
 The histogram of standardized residuals looks approximately normal. The Kolmogorov-Smirnov test returns a p-value of 0.978, which confirms our belief that the standardized residuals are normally distributed.
 
