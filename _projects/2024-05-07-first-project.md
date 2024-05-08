@@ -116,13 +116,12 @@ This data was collected from past semesters of an introductory statistics class.
   <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot4.jpeg" alt="" style="width:800px;"/>
 </div>
 
+
 The histogram of standardized residuals looks approximately normal. The Kolmogorov-Smirnov test returns a p-value of 0.978, which confirms our belief that the standardized residuals are normally distributed.
 
 The fitted values vs. residuals plot shows an approximately equal spread of residuals. The lack of obvious patterns or trends confirms our belief that the equal variance assumption is satisfied.
 
 After verifying that the necessary assumptions are met, this is the model that we produced:
-
-<center>
 
 |            | Estimate | Std. Error | t-value  | p-value    |
 |:-----------|:---------|:-----------|:---------|:------|
@@ -142,8 +141,6 @@ After verifying that the necessary assumptions are met, this is the model that w
 |Semester8  |  -0.376932|  0.323211 |-1.166208  |0.2630|
 |Semester9  |  -0.048025|  0.366645 |-0.130986  |0.8977|
 |Semester10 |   0.414087|  0.304966  |1.357815  |0.1960|
-
-</center>
 
 To determine how well our model fits the data, we performed leave-one-out cross validation. The mean RPMSE was 0.2266437 and the mean Bias was -0.004780159. These low values indicate that our model produces predictions that are close to the true values. We also calculated a pseudo R-Squared of 0.942, which indicates that our model's explanatory variables explain much of the variability in the Final Exam scores.
 
@@ -165,6 +162,8 @@ To determine if there were any semesters that were significantly better or worse
 
 Our analysis indicates that midterm exams are the best indicators of student performance on the final exam. Homework scores were a good indicator of student performance on the final exam but not as much as the exams. Quiz scores have a very minimal effect final exam scores, so they should not be prioritized. We suggest that the department could create a better learning environment by holding exam reviews both before and after the exams are administered.
 
+
+The code and data for this analysis can be seen in this [GitHub Repository](https://github.com/justinross102/Pedagogy).
 
 
 
