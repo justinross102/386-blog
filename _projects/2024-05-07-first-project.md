@@ -105,7 +105,7 @@ For our analysis, there are four assumptions that must be met in order for our i
 ## Model Validation
 
 <div style="text-align:center;">
-  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot3.jpeg" alt="" style="width:1000px;"/>
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot3.jpeg" alt="" style="width:600px;"/>
 </div>
 
 These added variable plots look sufficiently linear for the linearity assumption to be met. There are no obvious non-linear trends in any of the plots for numeric variables. In our analysis we are treating Semester as a category, so we are not concerned about the linearity of the Semester variables.
@@ -113,7 +113,7 @@ These added variable plots look sufficiently linear for the linearity assumption
 This data was collected from past semesters of an introductory statistics class. There is no reason for us to believe that the average final exam score of one section would affect the average final exam score of another section. Thus, we are confident that the independence assumption is met.
 
 <div style="text-align:center;">
-  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot4.jpeg" alt="" style="width:1000px;"/>
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot4.jpeg" alt="" style="width:800px;"/>
 </div>
 
 The histogram of standardized residuals looks approximately normal. The Kolmogorov-Smirnov test returns a p-value of 0.978, which confirms our belief that the standardized residuals are normally distributed.
@@ -121,6 +121,8 @@ The histogram of standardized residuals looks approximately normal. The Kolmogor
 The fitted values vs. residuals plot shows an approximately equal spread of residuals. The lack of obvious patterns or trends confirms our belief that the equal variance assumption is satisfied.
 
 After verifying that the necessary assumptions are met, this is the model that we produced:
+
+<div style="text-align:center;">
 
 |            | Estimate | Std. Error | t-value  | p-value    |
 |:-----------|:---------|:-----------|:---------|:------|
@@ -141,6 +143,7 @@ After verifying that the necessary assumptions are met, this is the model that w
 |Semester9  |  -0.048025|  0.366645 |-0.130986  |0.8977|
 |Semester10 |   0.414087|  0.304966  |1.357815  |0.1960|
 
+</div>
 
 To determine how well our model fits the data, we performed leave-one-out cross validation. The mean RPMSE was 0.2266437 and the mean Bias was -0.004780159. These low values indicate that our model produces predictions that are close to the true values. We also calculated a pseudo R-Squared of 0.942, which indicates that our model's explanatory variables explain much of the variability in the Final Exam scores.
 
