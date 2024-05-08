@@ -21,7 +21,7 @@ The purpose of this study is to evaluate the effect of various learning activiti
 ### Graphical Summaries
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot1.jpeg" alt="" style="width:1000px;"/>
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot2.jpeg" alt="" style="width:1000px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/PedagogyPlot2.jpeg" alt="" style="width:700px;"/>
 
 When examining the data, we found that most of the learning activities have a very low correlation with the average final exam score. Exam 3 has the highest correlation with the final exam with a correlation of 0.84, but the next highest correlation with the final exam is Exam 2’s correlation of 0.44. This suggests that some of our explanatory variables may not have a strong linear relationship with average final exam score. We are also concerned about differences in class sizes. Class sizes in this data range from 280 to 873 students, and we are concerned that these differences in class size may affect the variability in the average final exam scores.
 
