@@ -28,7 +28,7 @@ feature_row:
     alt: "bio"
     title: "About Me"
     excerpt: "Learn more about my qualifications."
-    url: "/bio/"
+    url: "/about/"
     btn_class: "btn--info"
     btn_label: "Go to Bio"
 ---
