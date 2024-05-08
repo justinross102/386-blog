@@ -20,7 +20,7 @@ feature_row:
   - image_path: /assets/images/competition.jpg
     alt: "projects"
     title: "Projects"
-    excerpt: "See written reports code from various assignments and projects."
+    excerpt: "Written reports and code from various projects."
     url: "/projects/"
     btn_class: "btn--info"
     btn_label: "Go to Projects"  
