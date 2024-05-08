@@ -20,7 +20,7 @@ title                    : "Learning Data Science"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Justin Ross"
-description              : "A collection of projects from my undergraduate statistics program."
+description              : "A collection of projects from my studies of statistics."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Justin Ross"
   avatar           : "/assets/images/my_picture.png"
-  bio              : "I am a fourth year undergraduate statistics student at Brigham Young University."
+  bio              : "I am a recent graduate of the Statistics program at Brigham Young University."
   location         : "Provo, Utah"
   email            : "justinross102@gmail.com"
   links:
