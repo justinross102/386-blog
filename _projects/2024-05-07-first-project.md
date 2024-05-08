@@ -35,7 +35,7 @@ If these issues are not addressed, our standard errors will be inaccurate. Inacc
 
 To analyze this data, we plan to use a multiple linear regression model. Multiple linear regression seems like the best choice because it can include several explanatory variables in the process of explaining the response variable. We will include all of the variables provided in the data as well as interaction terms related to class size. This should improve our model’s ability to capture the relationship between learning activities and average final exam scores.
 
-## Statistical Model
+## <span style="font-size: 0.8em;">Statistical Model</span>
 
 $$
 \mathbf{y} = \mathbf{X\beta} + \mathbf{\epsilon} \quad \text{,} \quad \mathbf{y} \sim N(\mathbf{X\beta}, \sigma^2\mathbf{D})
@@ -77,6 +77,8 @@ $$
 $$
 \text{Var}(\epsilon_i) = \frac{\sigma^2}{NStudents_i}, \quad D = \begin{pmatrix} d_{11} & 0 & 0 & \cdots & 0 \\ 0 & d_{22} & 0 & \cdots & 0 \\ \vdots & 0 & \ddots & \ddots & \vdots \\ 0 & 0 & \cdots & 0 & d_{nn} \\ \end{pmatrix}
 $$
+
+
 
 * **𝐲** is a column vector of the response variable observations (average final exam score).
 
