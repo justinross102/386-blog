@@ -36,15 +36,14 @@ log(Aerosol_n)
 \end{pmatrix}
 =
 \begin{pmatrix}
-1 & Minute_1 & ActivityHw_1  & \dots & ID100:log(Stationary_1)\\
-1 & Minute_2 & ActivityHw_2  & \dots & ID100:log(Stationary_2)\\
-\vdots & \vdots & \vdots & \dots & \vdots\\
-1 & Minute_n & ActivityHw_n  & \dots & ID100:log(Stationary_n)\\
+1 & Minute_1 & \dots & ID100:log(Stationary_1)\\
+1 & Minute_2 & \dots & ID100:log(Stationary_2)\\
+\vdots & \vdots & \dots & \vdots\\
+1 & Minute_n & \dots & ID100:log(Stationary_n)\\
 \end{pmatrix}
 \begin{pmatrix}
 \beta_0 \\
 \beta_{Minute} \\
-\beta_{ActivityHw} \\
 \vdots \\
 \beta_{ID100:log(Stationary)} \\
 \end{pmatrix}
