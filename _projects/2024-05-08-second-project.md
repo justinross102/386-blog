@@ -75,19 +75,19 @@ $$
 \rho_{59,1} & \dots & 1 \end{pmatrix}
 $$
 
-* $\mathbf{y}$ is a column vector of the response variable observations. In this case, it is the log PM measurement on the child’s vest. 
+* **𝐲** is a column vector of the response variable observations. In this case, it is the log PM measurement on the child’s vest. 
 
-* $\mathbf{X}$ is a matrix of the explanatory variables. Each row represents an observation and each column represents one of the variables.
+* **𝐗** is a matrix of the explanatory variables. Each row represents an observation and each column represents one of the variables.
 
-* $\beta$ is a column vector of coefficients. $\beta_0$ represents the intercept and the rest correspond to individual explanatory variables in the $\mathbf{X}$ matrix.
+* **β** is a column vector of coefficients. $\beta_0$ represents the intercept and the rest correspond to individual explanatory variables in the $\mathbf{X}$ matrix.
 
-* $\epsilon$ is a column vector of residuals (the difference between the observed and predicted values for the log PM measurement on the child’s vest). 
+* **𝜖** is a column vector of residuals (the difference between the observed and predicted values for the log PM measurement on the child’s vest). 
 
-* $\sigma^2$ represents the variance of the log PM measurement on the child’s vest. 
+* **σ²** represents the variance of the log PM measurement on the child’s vest. 
 
-* $\mathbf{B}$ represents a diagonal matrix where each diagonal element corresponds to an individual child in the data. The off-diagonal elements are all zero because we assume that there is no correlation between different patients.
+* **B** represents a diagonal matrix where each diagonal element corresponds to an individual child in the data. The off-diagonal elements are all zero because we assume that there is no correlation between different patients.
 
-* $\mathbf{R}$, the diagonal elements of $\mathbf{B}$, are 59x59 matrices unique to each child, wherein each element represents the unique correlation between minutes for a particular child. Each $\mathbf{R}$ has a compound symmetry correlation structure.
+* **R**, the diagonal elements of **B**, are 59x59 matrices unique to each child, wherein each element represents the unique correlation between minutes for a particular child. Each **R** has a compound symmetry correlation structure.
 
 For our analysis, there are four assumptions that must be met in order for our inferences to be valid. The assumptions are:
 - A linear relationship between the log vest PM measurement and the numeric explanatory variables in the data.
