@@ -17,7 +17,19 @@ Particulate matter is a mixture of airborne particles that are emitted from powe
 - If the effect of an activity or stationary measurements is specific to each child
 - If there are any activities that lead to higher PM exposure.
 
+<div style="text-align:center;">
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PMPlot1.jpeg" alt="" style="width:1000px;"/>
+</div>
+
+<div style="text-align:center;">
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PMPlot2.jpeg" alt="" style="width:1000px;"/>
+</div>
+
 When fitting our model, we need to ensure that the necessary assumptions are met. One of these assumptions is that there is independence between observations in the data. Each observation in the data should be unrelated to or unaffected by the other observations. One issue in our data is that there is correlation between minute observations of the same child. Using a model that does not account for this, the correlations between the residuals of first 10 minutes are shown below.
+
+<div style="text-align:center;">
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PMPlot3.jpeg" alt="" style="width:1000px;"/>
+</div>
 
 If this correlation is not addressed, our standard errors will be inaccurate. Inaccurate standard errors lead to biased coefficient estimates that do not capture the true relationship between the explanatory variables and the Log Aerosol measurements. We can account for correlation between minute observations of the same child by fitting a model that accounts for that correlation. This will improve the accuracy of our standard errors and obtain more reliable estimates of the model parameters.
 
