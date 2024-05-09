@@ -6,6 +6,10 @@ classes: wide
 
 In our analysis, we found that the particulate matter (PM) measurement of the stationary monitor alone does not do a good job of explaining PM exposure. Kids are exposed to higher PM measurements as they participate in different activities. The analysis also shows that the effects of stationary measurements and activities are child related, suggesting that a child’s living conditions impact the amount of PM they are exposed to. Children are exposed to the most PM when they play on the floor.
 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
 # Introduction
 Particulate matter is a mixture of airborne particles that are emitted from power plants, cars, and other sources of chemical reactions. Exposure to these particles can lead to a number of adverse health effects such as irregular heartbeat or aggravated asthma. The purpose of this study is to determine the best way to measure PM exposure among children so that researchers can better study the health effects of pollution. Our data consists of 100 children who were monitored for one hour. The children wore a PM monitoring vest and a stationary monitor was placed in their homes. Measurements from these devices were recorded every minute, along with the activity that the child was engaged in. From this analysis, we hope to determine:
 - If the stationary measurement is a good measure of PM exposure
@@ -20,6 +24,59 @@ If this correlation is not addressed, our standard errors will be inaccurate. In
 To analyze this data, we plan to use a multiple linear regression model. Multiple linear regression seems like the best choice because it can include several explanatory variables in the process of explaining the response variable. We will include all of the variables provided in the data as well as interaction terms for each child and their stationary measurements and their activities. We will try a variety of correlation structures and use the structure that results in the best model in terms of AIC. This should maximize our model’s ability to capture the relationship between the explanatory variables and log Aerosol measurements.
 
 # Statistical Model
+
+$$\mathbf{y} = \mathbf{X\beta} + \mathbf{\epsilon} \quad \text{,} \quad \mathbf{y} \sim N(\mathbf{X\beta}, \sigma^2\mathbf{B})$$
+
+$$
+\begin{pmatrix}
+log(Aerosol_1) \\
+log(Aerosol_2) \\
+\vdots \\
+log(Aerosol_n)
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & Minute_1 & ActivityHw_1  & \dots & ID100:log(Stationary_1)\\
+1 & Minute_2 & ActivityHw_2  & \dots & ID100:log(Stationary_2)\\
+\vdots & \vdots & \vdots & \dots & \vdots\\
+1 & Minute_n & ActivityHw_n  & \dots & ID100:log(Stationary_n)\\
+\end{pmatrix}
+\begin{pmatrix}
+\beta_0 \\
+\beta_{Minute} \\
+\beta_{ActivityHw} \\
+\vdots \\
+\beta_{ID100:log(Stationary)} \\
+\end{pmatrix}
++ 
+\begin{pmatrix}
+\epsilon_1 \\
+\epsilon_2 \\
+\vdots \\
+\epsilon_n
+\end{pmatrix}
+$$
+
+$$
+\mathbf{B} = \begin{pmatrix} R & 0 & \dots & 0 \\ 0 & R & \dots & 0 \\
+\vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \dots & R \end{pmatrix}
+, R = \begin{pmatrix} 1 & \dots & \rho_{1,59} \\ \vdots & \ddots & \vdots \\
+\rho_{59,1} & \dots & 1 \end{pmatrix}
+$$
+
+* $\mathbf{y}$ is a column vector of the response variable observations. In this case, it is the log PM measurement on the child’s vest. 
+
+* $\mathbf{X}$ is a matrix of the explanatory variables. Each row represents an observation and each column represents one of the variables.
+
+* $\beta$ is a column vector of coefficients. $\beta_0$ represents the intercept and the rest correspond to individual explanatory variables in the $\mathbf{X}$ matrix.
+
+* $\epsilon$ is a column vector of residuals (the difference between the observed and predicted values for the log PM measurement on the child’s vest). 
+
+* $\sigma^2$ represents the variance of the log PM measurement on the child’s vest. 
+
+* $\mathbf{B}$ represents a diagonal matrix where each diagonal element corresponds to an individual child in the data. The off-diagonal elements are all zero because we assume that there is no correlation between different patients.
+
+* $\mathbf{R}$, the diagonal elements of $\mathbf{B}$, are 59x59 matrices unique to each child, wherein each element represents the unique correlation between minutes for a particular child. Each $\mathbf{R}$ has a compound symmetry correlation structure.
 
 For our analysis, there are four assumptions that must be met in order for our inferences to be valid. The assumptions are:
 - A linear relationship between the log vest PM measurement and the numeric explanatory variables in the data.
