@@ -45,14 +45,14 @@ Bachelor of Science: Statistics, Emphasis in Data Science
 - Collaborate with researchers to ensure consistency and accuracy in data collection
 - Maintain organized records of coded data for integration into future research projects
 
-**BYU Statistics Department**, *Undergraduate Research Assistant*
-*Provo, UT | Jan 2024 - Apr 2024*
+**BYU Statistics Department**, *Undergraduate Research Assistant*  
+*Provo, UT | Jan 2024 - Apr 2024*  
 - Collaborated with Utah's Dept. of Environmental Quality on data-driven environmental research
 - Processed and integrated over 40,000 records using advanced techniques such as regular expressions, merges, and custom-written functions
 - Developed insightful explanatory visualizations using R and Tableau to support data interpretation
 
-**BYU Statistics Department**, *Teaching Assistant, Data Science Ecosystems*
-*Provo, UT | Sep 2023 - Apr 2024*
+**BYU Statistics Department**, *Teaching Assistant, Data Science Ecosystems*  
+*Provo, UT | Sep 2023 - Apr 2024*  
 - Taught programming methods to 20 students, enabling them to integrate multiple processes through bash scripting
 - Introduced students to command-line interface operations, enhancing their technical proficiency
 - Provided personalized debugging support, helping students identify and resolve coding errors
