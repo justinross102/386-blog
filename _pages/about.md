@@ -13,10 +13,10 @@ classes: wide
 
 ## Education
 ***
-**University of Utah**
-Master of Statistics: Emphasis in Biostatistics
+**University of Utah**   
+Master of Statistics: Emphasis in Biostatistics  
 - GPA: 3.90
-- Advanced Applied Statistics, Causal Methods in Public Health
+- Relevant Coursework: Advanced Applied Statistics, Causal Methods in Public Health
 
 **Brigham Young University**  
 Bachelor of Science: Statistics, Emphasis in Data Science
@@ -26,21 +26,21 @@ Bachelor of Science: Statistics, Emphasis in Data Science
 
 ## Experience
 ***
-**Utah Department of Health and Human Services**, *Intern*
-*Salt Lake City, UT | May 2025 - Present*
-▪ Advise healthcare providers and the public on rabies exposure protocols during peak season
-▪ Track and maintain rabies lab data, assisting with follow-up on high-risk exposure events
-▪ Develop revised content for disease plans based on updated evidence and national guidance
-▪ Apply advanced data manipulation techniques to clean data, preparing it for epidemiologic analysis
+**Utah Department of Health and Human Services**, *Intern*  
+*Salt Lake City, UT | May 2025 - Present*  
+- Advise healthcare providers and the public on rabies exposure protocols during peak season
+- Track and maintain rabies lab data, assisting with follow-up on high-risk exposure events
+- Develop revised content for disease plans based on updated evidence and national guidance
+- Apply advanced data manipulation techniques to clean data, preparing it for epidemiologic analysis
 
-**Study Design & Biostatistics Center – University of Utah**, *Biostatistics Intern*
-*Salt Lake City, UT | Nov 2024 - Present*
-▪ Provide statistical consulting for researchers ranging from students to seasoned PIs
-▪ Assist with study design through data analysis
-▪ Co-author publications for submission to medical journals
+**Study Design & Biostatistics Center – University of Utah**, *Biostatistics Intern*  
+*Salt Lake City, UT | Nov 2024 - Present*  
+- Provide statistical consulting for researchers ranging from students to seasoned PIs
+- Assist with study design through data analysis
+- Co-author publications for submission to medical journals
 
-**Rocky Mountain Center for Occupational & Environmental Health**, *Research Assistant* 
-*Salt Lake City, UT | Oct 2024 - Present*
+**Rocky Mountain Center for Occupational & Environmental Health**, *Research Assistant*  
+*Salt Lake City, UT | Oct 2024 - Present*  
 - Conduct behavioral and sequential analysis by coding videos using INTERACT
 - Collaborate with researchers to ensure consistency and accuracy in data collection
 - Maintain organized records of coded data for integration into future research projects
