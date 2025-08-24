@@ -11,7 +11,7 @@ In this beginner's guide, I will demonstrate the process of data visualization u
 
 # Using R
 
-When using R, the tidyverse package is incredibly useful for easily creating customizable visuals. If you don't already have it installed, you can install the tidyverse using this command: `install.packages("tidyverse")`. You can then load the package using the command: `library(tidyverse)`.
+When using R, the tidyverse package is incredibly useful for easily creating customizable visuals. If you don't already have it installed, you can install the tidyverse using this command: `install.packages("tidyverse")`. You can then load the package using the command `library(tidyverse)`.
 
 Now it's time to make some graphs! The tidyverse package will give you access to a function called `ggplot()`, which is what we will use in this tutorial. The basic syntax for ggplot is shown below:
 
@@ -33,15 +33,17 @@ Here are some common graphing functions you may find useful:
 | `labs()`                    | Modify axis and legend labels |
 
 ### Creating a scatterplot
-Let's practice by using ggplot to create a scatterplot. For this example, I will use data I scraped from [www.baseball-reference.com](https://www.baseball-reference.com/teams/PHI/2023-schedule-scores.shtml){:target="_blank"} which contains data from the Philadelphia Phillies 2023 season through September 27. If you wish to follow along, you can download this data from my repository on [GitHub](https://github.com/justinross102/386-blog/blob/master/assets/datasets/phillies_games_2023.csv).
-Following the basic syntax shown above, let's create a scatterplot of attendance throughout the season.
+Let's practice by using ggplot to create a scatterplot. For this example, I will use data I scraped from [www.baseball-reference.com](https://www.baseball-reference.com/teams/PHI/2023-schedule-scores.shtml){:target="_blank"} which contains data from the Philadelphia Phillies 2023 season through September 27. 
+
+If you wish to follow along, you can download this data from my repository on [GitHub](https://github.com/justinross102/386-blog/blob/master/assets/datasets/phillies_games_2023.csv).
+Following the basic syntax shown above, let's create a scatterplot of attendance throughout the season. Assume that you have read in the data and saved it into an object called `phillies_games`.
 ```r
 ggplot(data = phillies_games, mapping = aes(x = Date, y = Attendance)) +
 geom_point() # function for scatterplots
 ```
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/basic_scatter.jpeg" alt="" style="width:500px;"/>
 
-Let's make this graph a little more interesting. By supplying another variable to the `color` argument in the `aes()` function, we can gain additional insights from this graph.
+Let's make this graph a little more interesting! By supplying a variable to the `color` argument in the `aes()` function, we can gain additional insights from this graph.
 ```r
 ggplot(data = phillies_games, mapping = aes(x = Date, y = Attendance, color = Home)) +
   geom_point()
@@ -64,11 +66,11 @@ Note that I've made some changes to the structure of my code. Instead of using t
 
 In addition to adding a title, I used `labs()` to change the label of the legend. Before, the legend was labeled `Home` because that is the variable determining the color of a point. To change the legend label, the argument is `color` because that matches the argument in the `ggplot()` function responsible for adding the color and legend to the plot. If you so desire, you can rename the x and y axes by adding `x = "", y = ""` arguments to the `labs()` function. 
 
-Lastly, it is good practice for graphs to be square, so I added a line of code to make the plot a square.
+Lastly, it is good practice for graphs to be square, so I added a line of code to make the plot square.
 
 ### Creating a boxplot
 
-Now that we've seen how to create a scatterplot, let's make a boxplot showing the runs scored by the Phillies at Home vs. Away games. In addition to specifying new variables, we will need to use `geom_boxplot()` instead of `geom_point()`.
+Now that we've seen how to create a scatterplot, let's make a boxplot showing the runs scored by the Phillies in Home vs. Away games. In addition to specifying new variables, we will need to use `geom_boxplot()` instead of `geom_point()`.
 ```r
 phillies_games %>% 
   ggplot(mapping = aes(Home, R)) +
@@ -81,7 +83,7 @@ phillies_games %>%
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/basic_boxplot.jpeg" alt="" style="width:500px;"/>
 
-Just as we did with the scatterplot, we can add additional information to this plot by specifying a color. For boxplots, we will specify a `fill` variable in the `aes()` function. We can also switch the orientation of the plots by adding `coord_flip()` to our code.
+Just as we did with the scatterplot, we can add additional information to this plot by specifying a color. For boxplots, we specify a color using the `fill` argument in the `aes()` function. We can also switch the orientation of the plots by adding `coord_flip()` to our code.
 
 ```r
 phillies_games %>% 
@@ -102,7 +104,7 @@ To relabel the legend to `Time of Game`, I used the `fill` argument in `labs()`.
 
 ### Displaying Multiple Plots
 
-If you want to display multiple plots together, I would recommend the `patchwork` package. You'll have to install it if you haven't installed it already (`install.packages("patchwork")`). Once it is installed and loaded by running `library(patchwork)`, you can display plots together using `+` and `/` operators. The `+` operator places plots side by side, while the `/` operator places plots on top of eachother. One example is shown below. Assume my final scatterplot is assigned to a variable called `attendance_scatter` and my final boxplot is assigned to a variable called `runs_boxplot`.
+If you want to display multiple plots together, I would recommend the `patchwork` package. You'll have to install it if you haven't installed it already. Once it is installed and loaded by running `library(patchwork)`, you can display plots together using `+` and `/` operators. The `+` operator places plots side by side, while the `/` operator places plots on top of eachother. One example is shown below. Assume my final scatterplot is assigned to a variable called `attendance_scatter` and my final boxplot is assigned to a variable called `runs_boxplot`.
 
 ```r
 install.packages("patchwork")
