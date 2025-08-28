@@ -1,7 +1,7 @@
 ---
 title:  "Data Visualization Made Simple: Creating Graphs in R"
 header:
-  image: /assets/images/computer_with_bar_chart.png
+  image: /assets/images/m-W7wEqy01K3s-unsplash.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 description: "Tips and Best Practices for Effective Data Graphing" 
 classes: wide
