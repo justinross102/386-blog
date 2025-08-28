@@ -43,14 +43,14 @@ Following the basic syntax shown above, let's create a scatterplot of attendance
 ggplot(data = phillies_games, mapping = aes(x = Date, y = Attendance)) +
 geom_point() # function for scatterplots
 ```
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/basic_scatter.jpeg" alt="" style="width:500px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/basic_scatter.jpeg" alt="" style="width:600px;"/>
 
 Let's make this graph a little more interesting! By supplying a variable to the `color` argument in the `aes()` function, we can gain additional insights from this graph.
 ```r
 ggplot(data = phillies_games, mapping = aes(x = Date, y = Attendance, color = Home)) +
   geom_point()
 ```
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/basic_scatter_w_color.jpeg" alt="" style="width:500px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/basic_scatter_w_color.jpeg" alt="" style="width:600px;"/>
 
 We're almost done, but our graph still needs a title! We can add a title using the `labs()` function, which can also add other elements like axis labels or captions.
 ```r
@@ -62,7 +62,7 @@ phillies_games %>%
   theme(aspect.ratio = 1)
 ```
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/scatter_w_color_title.jpeg" alt="" style="width:500px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/scatter_w_color_title.jpeg" alt="" style="width:600px;"/>
 
 Note that I've made some changes to the structure of my code. Instead of using the `data =` argument, I supplied my dataset into the function using a pipe: `%>%`. Also, I did not specify `x =` and `y =` in the `aes()` function, knowing that whatever variable is specified first goes on the x-axis. 
 
@@ -83,7 +83,7 @@ phillies_games %>%
   theme(aspect.ratio = 1)
 ```
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/basic_boxplot.jpeg" alt="" style="width:500px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/basic_boxplot.jpeg" alt="" style="width:600px;"/>
 
 Just as we did with the scatterplot, we can add additional information to this plot by specifying a color. For boxplots, we specify a color using the `fill` argument in the `aes()` function. We can also switch the orientation of the plots by adding `coord_flip()` to our code.
 
@@ -100,7 +100,7 @@ phillies_games %>%
   coord_flip()
 ```
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/boxplot_w_color_title.jpeg" alt="" style="width:500px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/graphs_in_r_plots/boxplot_w_color_title.jpeg" alt="" style="width:600px;"/>
 
 To relabel the legend to `Time of Game`, I used the `fill` argument in `labs()`. We use `color` for scatter plots and `fill` for boxplots because the argument in `labs()` has to match the argument that controls the colors in the plot.
 
