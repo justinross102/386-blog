@@ -97,6 +97,10 @@ For our analysis, there are four assumptions that must be met in order for our i
 
 
 # Model Validation
+<div style="text-align:center;">
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PM_AVPlots.jpg" alt="" style="width:1000px;"/>
+</div>
+
 After transforming the Aerosol and Stationary measurements the log scale, these added variable plots look sufficiently linear for the linearity assumption to be met. There are no obvious non-linear trends in any of the plots for numeric variables. In our analysis we are treating Activity and ID as categories, so we are not concerned about the linearity of those variables.
 With our longitudinal model, we have accounted for correlation between minute measurements of the same child. The updated correlations between the residuals of first 10 minutes are shown below. There is also no reason to believe that one child’s measurements would be correlated with another child’s measurements. Thus, we can conclude that the independence assumption is met.
 
