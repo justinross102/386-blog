@@ -113,16 +113,25 @@ With our longitudinal model, we have accounted for correlation between minute me
 </div>
 
 The histogram of decorrelated residuals looks approximately normal. Thus, we can conclude that the normality assumption is met.
+
 The fitted values vs. residuals plot shows an approximately equal spread of residuals. The lack of obvious patterns or trends confirms our belief that the equal variance assumption is satisfied.
+
 To determine how well our model fits the data, we calculated a pseudo R-Squared by dividing the variance of our model’s residuals by the variance of the residuals from a model with no explanatory variables. We then subtracted this from 1. The result was 0.930, which indicates that our model’s explanatory variables explain much of the variability in the log PM vest measurements.
 
 # Analysis Results
 To determine if the stationary measurement alone does a good job explaining PM exposure, we fit a model with the stationary measurements as the only explanatory variable. We then calculated a psuedo R-Squared squared for this model. The result of 0.001956604 indicates that stationary measurements alone do not do a good job explaining PM exposure.
+
 To determine if the activities explain more of the aerosol intake than just stationary alone, we fit a model with the activities and stationary measurements as the only explanatory variables. Our psuedo R-Squared for this model was 0.008594545, which indicates that the activities explain more of the aerosol intake than just stationary alone.
+
 We confirmed that the effects of activities and stationary are child-specific by conducting an F-test on two models. One model included all of the variables and interaction terms between activities/stationary measurements and each child, and the other model did not include any interaction terms. The p-value of 0.0001 indicated that there was a significant difference between these models.
+
 To determine how much variability exists in the effects from child to child, we added the baseline effect for each activity to the interaction coefficients for each child and that activity. This gives us the adjusted coefficient for each child-activity pair. We did the same calculation for the stationary coefficient and interaction terms. Playing on the Floor had the highest variability with a standard deviation of 1.062668. The spread of effects for Playing on the Floor can be seen below. Other activities with high variability were Homework, Walking, and Playing On Furniture. Video Games had the lowest variability with a standard deviation of 0.8086411. Stationary measurements had very low variability, with a standard deviation of 0.1863893.
 
+photo
+
 To determine which activities lead to higher PM exposure, we calculated the mean of our adjusted coefficients for each child-activity pair:
+
+table
 
 Every activity except Homework had a positive average, indicating that on average, every activity except for Homework will lead to higher PM exposure. Playing on the Floor had the highest average effect.
 
