@@ -127,11 +127,15 @@ We confirmed that the effects of activities and stationary are child-specific by
 
 To determine how much variability exists in the effects from child to child, we added the baseline effect for each activity to the interaction coefficients for each child and that activity. This gives us the adjusted coefficient for each child-activity pair. We did the same calculation for the stationary coefficient and interaction terms. Playing on the Floor had the highest variability with a standard deviation of 1.062668. The spread of effects for Playing on the Floor can be seen below. Other activities with high variability were Homework, Walking, and Playing On Furniture. Video Games had the lowest variability with a standard deviation of 0.8086411. Stationary measurements had very low variability, with a standard deviation of 0.1863893.
 
-photo
+<div style="text-align:center;">
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/PM_Histogram.png" alt="" style="width:1000px;"/>
+</div>
 
 To determine which activities lead to higher PM exposure, we calculated the mean of our adjusted coefficients for each child-activity pair:
 
-table
+<div style="text-align:center;">
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/average_effects.png" alt="" style="width:1000px;"/>
+</div>
 
 Every activity except Homework had a positive average, indicating that on average, every activity except for Homework will lead to higher PM exposure. Playing on the Floor had the highest average effect.
 
