@@ -134,7 +134,7 @@ To determine how much variability exists in the effects from child to child, we 
 To determine which activities lead to higher PM exposure, we calculated the mean of our adjusted coefficients for each child-activity pair:
 
 <div style="text-align:center;">
-  <img src="{{site.url}}/{{site.baseurl}}/assets/images/average_effects.png" alt="" style="width:500px;"/>
+  <img src="{{site.url}}/{{site.baseurl}}/assets/images/average_effects.png" alt="" style="width:300px;"/>
 </div>
 
 Every activity except Homework had a positive average, indicating that on average, every activity except for Homework will lead to higher PM exposure. Playing on the Floor had the highest average effect.
